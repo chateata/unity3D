@@ -1,0 +1,4 @@
+repository "TilesHop@wechat_os_qy0ygp2upbafw_cvlto59lpmg@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
