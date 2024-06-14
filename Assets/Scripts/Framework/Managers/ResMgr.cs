@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
-//using AssetBundles
+//using AssetsBundles；
 
 public class ResMgr : UnitySingleton<ResMgr> {
     public override void Awake()
@@ -20,7 +19,7 @@ public class ResMgr : UnitySingleton<ResMgr> {
             //string path = AssetBundleUtility.PackagePathToAssetsPath(name);
             string path = "Assets/AssetsPackage/" + name + "";
             //Debug.Log(path);
-            UnityEngine.Object target = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(path);
+            UnityEngine.Object target = UnityEditor.AssetDatabase.LoadAssetAtPath<T>(path);
             return target as T;
 
         }

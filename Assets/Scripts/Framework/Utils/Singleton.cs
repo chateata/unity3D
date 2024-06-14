@@ -31,6 +31,7 @@ where T : Component
                     GameObject obj = new GameObject();
                     _instance = (T)obj.AddComponent(typeof(T));
                     obj.hideFlags = HideFlags.DontSave;
+                    //obj.hideFlags = HideFlags.HideAndDontSave;
                     obj.name = typeof(T).Name;
 
                 }

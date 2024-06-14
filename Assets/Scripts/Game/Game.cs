@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Game : UnitySingleton<Game>
 {
-    //游戏开始
-    public void Gamestart() {
-        this.enterGameScene();
+        public void InitGame() {
+        this.EnterMainScene();
     }
 
-    public void enterGameScene() {
+    public void EnterMainScene() {
         //释放地图
         //end
 
