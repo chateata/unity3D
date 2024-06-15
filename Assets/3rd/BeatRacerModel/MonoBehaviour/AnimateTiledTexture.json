@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7580132855992303743
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2022174933823413785
+  },
+  "m_Name": "",
+  "columns": 2,
+  "rows": 2,
+  "framesPerSecond": 4.0,
+  "propertyName": [
+    "_MainTex",
+    "_SubTex"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 8384091948727491794
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8333955039048239563
+  },
+  "m_Name": "",
+  "_savedIndex": 4,
+  "relatedParticleSystem": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -6927768881874026039
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4383027233745761223
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -802214089894050076
+    }
+  ],
+  "relatedMeshRenderer": [],
+  "relatedSpriteRenderer": []
+}

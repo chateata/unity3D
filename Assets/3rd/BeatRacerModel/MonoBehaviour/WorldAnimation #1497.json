@@ -1,0 +1,90 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7764281221417438800
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6240611404226988587
+  },
+  "m_Name": "",
+  "animationObjects": [
+    {
+      "group": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 3256548590968444380
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -6017003258772676105
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 3419208440562282397
+        }
+      ],
+      "startScale": 1.0,
+      "scaleWeight": 2.0,
+      "isAllScale": 0
+    },
+    {
+      "group": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 8913395997511055638
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -6953043622809640337
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 5175902745709247486
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 4720867621019001771
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 3291180626340850800
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 4969264417067156876
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -7853654428995140888
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -3497703376423966514
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 2390305502769651461
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 848132808765572702
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 6028210978961555193
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 5553853723715512291
+        }
+      ],
+      "startScale": 1.0,
+      "scaleWeight": 1.4,
+      "isAllScale": 0
+    }
+  ],
+  "scrollAnimations": [],
+  "rotationAnimations": []
+}

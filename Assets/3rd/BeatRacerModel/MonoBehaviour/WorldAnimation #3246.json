@@ -1,0 +1,35 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -6817365959838564045
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6240611404226988587
+  },
+  "m_Name": "",
+  "animationObjects": [
+    {
+      "group": [
+        {
+          "m_FileID": 0,
+          "m_PathID": -7790061389766394074
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -9165632543330346066
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -1406081602626115058
+        }
+      ],
+      "startScale": 1.0,
+      "scaleWeight": 1.6,
+      "isAllScale": 0
+    }
+  ],
+  "scrollAnimations": [],
+  "rotationAnimations": []
+}

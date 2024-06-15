@@ -1,0 +1,174 @@
+{
+    "name": "Track Data",
+    "version": "1.0.0",
+    "list": [
+        {
+            "id": "world1",
+            "bgm": {
+                "id": "bgm-world1",
+                "cover":"cover-world1"
+            },
+            "schedule": [
+                {
+                    "id": "world1-1",
+                    "loop": 4
+                },
+                {
+                    "id": "world1-2",
+                    "loop": 4
+                },
+                {
+                    "id": "world1-3",
+                    "loop": 4
+                }
+            ]
+        },
+        {
+            "id": "world2",
+            "bgm": {
+                "id": "bgm-world2",
+                "cover":"cover-world2"
+            },
+            "schedule": [
+                {
+                    "id": "world2-1",
+                    "loop": 4
+                },
+                {
+                    "id": "world1-1",
+                    "loop": 2
+                },
+                {
+                    "id": "world1-3",
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world3",
+            "bgm": {
+                "id": "bgm-world3",
+                "cover":"cover-world3"
+            },
+            "schedule": [
+                {
+                    "id": "world3-2",
+                    "loop": 4
+                },
+                {
+                    "id": "world2-1",
+                    "loop": 2
+                },
+                {
+                    "id": "world1-3",
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world4",
+            "bgm": {
+                "id": "bgm-world4",
+                "cover":"cover-world4"
+            },
+            "schedule": [
+                {
+                    "id": "world4-3",
+                    "loop": 4
+                },
+                {
+                    "id": "world2-1",
+                    "loop": 2
+                },
+                {
+                    "id": "world3-2",
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world5",
+            "bgm": {
+                "id": "bgm-world5",
+                "cover":"cover-world5"
+            },
+            "schedule": [
+                {
+                    "id": "world5-2",
+                    "loop": 4
+                },
+                {
+                    "id": "world2-1",
+                    "loop": 2
+                },
+                {
+                    "id": "world4-3",
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world6",
+            "bgm": {
+                "id": "bgm-world6",
+                "cover":"cover-world6"
+            },
+            "schedule": [
+                {
+                    "id": "world6-1",
+                    "loop": 4
+                },
+                {
+                    "id": "world5-2",
+                    "loop": 2
+                },
+                {
+                    "id": "world4-3",       
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world7",
+            "bgm": {
+                "id": "bgm-world7",
+                "cover":"cover-world7"
+            },
+            "schedule": [
+                {
+                    "id": "world7-3",
+                    "loop": 4
+                },
+                {
+                    "id": "world6-1",
+                    "loop": 2
+                },
+                {
+                    "id": "world5-2",
+                    "loop": 2
+                }
+            ]
+        },
+        {
+            "id": "world8",
+            "bgm": {
+                "id": "bgm-world8",
+                "cover":"cover-world8"
+            },
+            "schedule": [
+                {
+                    "id": "world8-1",
+                    "loop": 4
+                },
+                {
+                    "id": "world8-2",
+                    "loop": 1
+                },
+                {
+                    "id": "world8-3",
+                    "loop": 4
+                }
+            ]
+        }
+    ]
+}

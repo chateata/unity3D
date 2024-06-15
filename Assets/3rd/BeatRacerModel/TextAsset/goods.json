@@ -1,0 +1,364 @@
+{
+    "name": "Virtual Goods",
+    "version": "1.0.0",
+    "build": 0,
+    "golds":[
+        {
+            "id": "gold_pack_1",
+            "category": "goldpack",
+            "currencyId":"USD",
+            "price":0.99,
+            "amount":5000
+
+        },
+        {
+            "id": "gold_pack_2",
+            "category": "goldpack",
+            "currencyId":"USD",
+            "price":1.99,
+            "amount":12000
+        },
+        {
+            "id": "gold_pack_3",
+            "category": "goldpack",
+            "currencyId":"USD",
+            "price":2.99,
+            "amount":20000
+        },
+        {
+            "id": "gold_pack_4",
+            "category": "goldpack",
+            "currencyId":"USD",
+            "price":4.99,
+            "amount":50000
+        },
+        {
+            "id": "gold_pack_5",
+            "category": "goldpack",
+            "currencyId":"USD",
+            "price":5.99,
+            "amount":80000
+        }
+    ],
+    "gems":[
+        {
+            "id": "gem1",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":950,
+            "amount":100
+
+        },
+        {
+            "id": "gem2",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":1900,
+            "amount":200
+        },
+        {
+            "id": "gem3",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":4500,
+            "amount":500
+        },
+        {
+            "id": "gem4",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":10000,
+            "amount":1200
+        },
+        {
+            "id": "gem5",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":20000,
+            "amount":2500
+        },
+        {
+            "id": "gem6",
+            "category": "gempack",
+            "currencyId":"gold",
+            "price":40000,
+            "amount":5000
+        }
+    ],
+    "unlock":[
+        {
+            "id": "unlock_world1",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":0,
+            "type":"STAGE 01",
+            "title": "NEON CITY"
+        },
+        {
+            "id": "unlock_world2",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":70,
+            "type":"STAGE 02",
+            "title": "LUMINOUS VALLEY"
+        },
+        {
+            "id": "unlock_world3",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":150,
+            "type":"STAGE 03",
+            "title": "MELTING CANYON"
+        },
+        {
+            "id": "unlock_world4",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":300,
+            "type":"STAGE 04",
+            "title": "REFLEX LAKE"
+        },
+        {
+            "id": "unlock_world5",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":600,
+            "type":"STAGE 05",
+            "title": "TRIANGULAR FOREST"
+        },
+        {
+            "id": "unlock_world6",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":1200,
+            "type":"STAGE 06",
+            "title": "POINTED FIELD"
+        },
+        {
+            "id": "unlock_world7",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":2500,
+            "type":"STAGE 07",
+            "title": "GEOMETRIC MOUNTAIN"
+        },
+        {
+            "id": "unlock_world8",
+            "category": "stage",
+            "currencyId":"gem",
+            "price":5000,
+            "type":"STAGE 08",
+            "title": "CHAOTIC SPACE"
+        }
+        
+    ],
+    "continuePlay":{
+            "id": "continue",
+            "category": "continue",
+            "currencyId":"gem",
+            "price":2
+    },
+    "gemN":{
+            "id": "NPack",
+            "category": "continue",
+            "currencyId":"gold",
+            "price":10, 
+            "amount":30
+    },
+    "upgradeLevel":{
+            "id": "upgradeLevel",
+            "category": "car",
+            "currencyId":"gold",
+            "price":200
+    },
+    "colors": [
+        {
+            "id": "color1",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 500,
+            "color": "79d2e8"
+        },
+        {
+            "id": "color2",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 500,
+            "color": "e9be6f"
+        },
+        {
+            "id": "color3",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 500,
+            "color": "ea33b1"
+        },
+        {
+            "id": "color4",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 0,
+            "color": "212121"
+        },
+        {
+            "id": "color5",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 500,
+            "color": "eaeaea"
+        },
+        {
+            "id": "color6",
+            "category": "color",
+            "currencyId":"gold",
+            "price": 500,
+            "color": "79e8c2"
+        }
+    ],
+    "cars": [
+        {
+            "id": "car1",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 0,
+            "type":"Compact",
+            "title":"Legacy",
+            "defaultLevel": 1,
+            "defaultBeatAmountWeight": 1.0,
+            "spec":"240",
+            "upgrade": {
+                "speedWeight": 0.0,
+                "accelelationOfLevel":0.0,
+                "attacWeight": 0.0,
+                "handlingWeight": 0.0,
+                "trackSpeedWeight": 0.07
+            }
+        },
+        {
+            "id": "car2",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 1250,
+            "type":"Compact",
+            "title":"Discovery",
+            "defaultLevel": 4,
+            "defaultBeatAmountWeight": 0.99,
+            "spec":"250",
+            "upgrade": {
+                "speedWeight": 0.15,
+                "accelelationOfLevel":0.15,
+                "attacWeight": 0.08,
+                "handlingWeight": 0.09,
+                "trackSpeedWeight": 0.12
+            }
+        },
+        {
+            "id": "car3",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 2500,
+            "type":"Standard",
+            "title":"Aerodynamic",
+            "defaultLevel": 6,
+            "defaultBeatAmountWeight": 0.98,
+            "spec":"280",
+            "upgrade": {
+                "speedWeight": 0.23,
+                "accelelationOfLevel":0.3,
+                "attacWeight": 0.11,
+                "handlingWeight": 0.13,
+                "trackSpeedWeight": 0.17
+            }
+        },
+        {
+            "id": "car4",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 5000,
+            "type":"Standard",
+            "title":"Derezzed",
+            "defaultLevel": 8,
+            "defaultBeatAmountWeight": 0.97,
+            "spec":"290",
+            "upgrade": {
+                "speedWeight": 0.31,
+                "accelelationOfLevel":0.45,
+                "attacWeight": 0.15,
+                "handlingWeight": 0.18,
+                "trackSpeedWeight": 0.22
+            }
+        },
+        {
+            "id": "car5",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 10000,
+            "type":"Sports",
+            "title":"Musique",
+            "defaultLevel": 10,
+            "defaultBeatAmountWeight": 0.96,
+            "spec":"320",
+            "upgrade": {
+                "speedWeight": 0.39,
+                "accelelationOfLevel":0.6,
+                "attacWeight": 0.19,
+                "handlingWeight": 0.22,
+                "trackSpeedWeight": 0.27
+            }
+        },
+        {
+            "id": "car6",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 20000,
+            "type":"Sports",
+            "title":"Revolution",
+            "defaultLevel": 12,
+            "defaultBeatAmountWeight": 0.95,
+            "spec":"330",
+            "upgrade": {
+                "speedWeight": 0.47,
+                "accelelationOfLevel":0.75,
+                "attacWeight": 0.23,
+                "handlingWeight": 0.26,
+                "trackSpeedWeight": 0.32
+            }
+        },
+        {
+            "id": "car7",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 40000,
+            "type":"Super",
+            "title":"Technologic",
+            "defaultLevel": 14,
+            "defaultBeatAmountWeight": 0.94,
+            "spec":"360",
+            "upgrade": {
+                "speedWeight": 0.55,
+                "accelelationOfLevel":0.8,
+                "attacWeight": 0.26,
+                "handlingWeight": 0.31,
+                "trackSpeedWeight": 0.37
+            }
+        },
+        {
+            "id": "car8",
+            "category": "car",
+            "currencyId":"gold",
+            "price": 80000,
+            "type":"Super",
+            "title":"Robot Rock",
+            "defaultLevel": 16,
+            "defaultBeatAmountWeight": 0.93,
+            "spec":"370",
+            "upgrade": {
+                "speedWeight": 0.64,
+                "accelelationOfLevel":0.85,
+                "attacWeight": 0.3,
+                "handlingWeight": 0.35,
+                "trackSpeedWeight": 0.42
+            }
+        }
+    ]
+}
