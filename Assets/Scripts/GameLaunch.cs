@@ -7,6 +7,7 @@ public class GameLaunch : UnitySingleton<GameLaunch> {
     public override void Awake() {
         base.Awake();
 
+        //初始化游戏框架
         this.InitFramwork();
 
         //初始化游戏逻辑
@@ -16,8 +17,9 @@ public class GameLaunch : UnitySingleton<GameLaunch> {
 
     private void InitFramwork() 
     {
-        //初始化框架：资源管理模块，日志管理模块，网络管理模块，声音管理模块，UI管理模块   
+        //初始化框架：资源管理模块，声音管理模块，UI管理模块   
         this.gameObject.AddComponent<ResMgr>();
+        this.gameObject.AddComponent<AudioMgr>();
         this.gameObject.AddComponent<UIMgr>();
     }
 
@@ -28,6 +30,7 @@ public class GameLaunch : UnitySingleton<GameLaunch> {
 
     public void  Start() {
         //检查资源分析
+        //没写，来个人写吧
         //end
 
         Game.Instance.InitGame();

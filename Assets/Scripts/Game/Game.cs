@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Game : UnitySingleton<Game>
 {
-        public void InitGame() {
+    public void InitGame() 
+    {
         this.EnterMainScene();
     }
 
