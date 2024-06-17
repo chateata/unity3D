@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CharacterCtrl : MonoBehaviour
+public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 {
     public float turnSpeed=2;
     public float Speed=4;
