@@ -17,10 +17,25 @@ public class ObstacleManager : MonoBehaviour
     private int genIndex=0;
     private AudioSource music=null;
 
-    private float gameSpeed=5f;
+    private float gameSpeed = 5f;
     // private float gameGravity=0.0f;
 
     // public static object Instance { get; internal set; }
+
+
+    void Start()
+    {
+        this.blockPrefab = this.transform.Find("Start").gameObject;
+
+        this.musicBlocks = bgm1Data.data.blocks;
+        this.totalBlocks = this.musicBlocks.Length;
+
+        for(int i=0;i<6;i++){
+            this.genOneBlock();
+        }
+
+        // this.music.Play();
+    }
 
     void Update() {
         
@@ -28,43 +43,42 @@ public class ObstacleManager : MonoBehaviour
         //元素相关
         // this.ball=this.transform.Find("ball").gameObject;
         // this.gameCamera=this.transform.Find("Main Camera");
-        this.blockPrefab = this.transform.Find("Start").gameObject;
-        // this.blockRoot=this.transform.Find("PlatRoot");
+        // this.blockPrefab = this.transform.Find("Start").gameObject;
+        // this.blockRoot = this.transform.Find("PlatRoot");
         //end
 
 
         //音乐相关，名字--》选取音乐
-        this.musicBlocks=bgm1Data.data.blocks;
-        this.totalBlocks=this.musicBlocks.Length;
-        // //end
+        // this.musicBlocks = bgm1Data.data.blocks;
+        // this.totalBlocks = this.musicBlocks.Length;
+        //end
 
-        //        //放音乐
+        //放音乐
         // this.music=this.gameObject.AddComponent<AudioSource>();
         // this.music.clip=ResMgr.Instance.GetAssetCache<AudioClip>(bgm1Data.soundUr1);
         // //end
 
         //预先生成6个块；
-        for(int i=0;i<6;i++){
-            this.genOneBlock();
-        }
+        // for(int i=0;i<6;i++){
+        //     this.genOneBlock();
+        // }
         //end
+        this.genOneBlock();
 
     }
+
     private void genOneBlock(){
         if(this.genIndex>=this.totalBlocks){
             return;
         }
         GameObject block = GameObject.Instantiate(this.blockPrefab);
-        block.name="block"+this.genIndex;
+        block.name = "block" + this.genIndex;
         block.transform.SetParent(this.blockRoot,false);
-        Vector3 pos=new Vector3(0,0.34f,-this.gameSpeed*this.musicBlocks[this.genIndex].zTime);
+        Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, -this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
         block.transform.position=pos;
         this.genIndex++;
     }
 
-    void Start(){
-        // this.music.Play();
-    }
 }
 
 

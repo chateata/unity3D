@@ -13,104 +13,73 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 {
 
     public float turnSpeed=2;
+    public float Speed=10;
 
-     public float Speed=10;
+    
+    public float maxXPosition = 1f;
+    public float minXPosition = -1f;
+    public float xMoveIncrement = 1f;
 
-     [SerializeField] float jumpSpeed=2;
 
-    [SerializeField]float jumpHeight=5;
-
+    [SerializeField] float jumpSpeed=2;
+    [SerializeField] float jumpHeight=5;
     [SerializeField] float fallSpeed=10;
+    [SerializeField] float jumpTarget=0; 
 
-     [SerializeField] float jumpTarget=0; 
 
-  
-  
-  
+    private float currentXPosition = 0f;
+    private bool isMovingLeft = false;
+    private bool isMovingRight = false;
 
-    // Start is called before the first frame update
-
-     void Start()
-
-     {
-
-  
-
-     }
-
-  
-
-    // Update is called once per frame
+    void Start()
+    {
+    }
 
     void Update()
-
     {
 
         if (Input.GetKeyDown(KeyCode.R))
-
         {
 
             SceneManager.LoadScene(0);
-
             Time.timeScale=1;
-
             return;
-
          }
 
   
-
-        float z=Input.GetAxis("Horizontal");
-
-        transform.Translate(Speed*Time.deltaTime,0,-z*turnSpeed*Time.deltaTime);
-
-  
-
+        HandleHorizontalMovement();
+        
         jump();
 
     }
+    void HandleHorizontalMovement()
+    {
+        float z=Input.GetAxis("Horizontal");
+        transform.Translate(Speed*Time.deltaTime,0,-z*turnSpeed*Time.deltaTime);
 
-  
-
+    }
     void jump()
-
     {
 
-        if(Input.GetKeyDown(KeyCode.Space)){
-
-        jumpTarget=jumpHeight;
-
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpTarget=jumpHeight;
         }
 
         if(jumpTarget>0)
         {
-
-           transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime);
-
+            transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime);
             if(transform.position.y>=jumpTarget){
-
                 jumpTarget=0;
-
             }
-
-         }
-
-        else if(transform.position.y>0){
-
+        }else if(transform.position.y>0)
+        {
             transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
-
             if(transform.position.y<0){
-
                 Vector3 newPos=transform.position;
-
                 newPos.y=0;
-
                 transform.position=newPos;
-
-         }
-
+            }
         }
-
     }
-
 }
