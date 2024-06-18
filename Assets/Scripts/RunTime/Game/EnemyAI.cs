@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed = 10f;
     void Start()
     {
         
