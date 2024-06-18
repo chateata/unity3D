@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class GameMgr : MonoBehaviour
+public class GameMgr_1 : MonoBehaviour
 {
     private GameObject ball=null;
     private Transform gameCamera=null;
