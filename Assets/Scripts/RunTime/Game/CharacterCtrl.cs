@@ -1,9 +1,6 @@
 using System.Collections;
-
 using System.Collections.Generic;
-
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
 
   
@@ -11,28 +8,24 @@ using UnityEngine.SceneManagement;
 public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
 {
+    private Vector3 startPosition;
 
-    public float turnSpeed=2;
-    public float Speed=10;
+    public float moveDistance = 1f; 
+    private float currentPosition; 
+    private bool isMoving = false; 
 
-    
-    public float maxXPosition = 1f;
-    public float minXPosition = -1f;
-    public float xMoveIncrement = 1f;
+    public float speed = 10f;
 
+   
 
     [SerializeField] float jumpSpeed=2;
     [SerializeField] float jumpHeight=5;
     [SerializeField] float fallSpeed=10;
     [SerializeField] float jumpTarget=0; 
 
-
-    private float currentXPosition = 0f;
-    private bool isMovingLeft = false;
-    private bool isMovingRight = false;
-
     void Start()
     {
+        startPosition = transform.position;
     }
 
     void Update()
@@ -40,24 +33,62 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-
             SceneManager.LoadScene(0);
-            Time.timeScale=1;
+            Time.timeScale = 1;
             return;
          }
-
   
-        HandleHorizontalMovement();
-        
+        Move();
         jump();
 
+        transform.Translate(transform.forward * speed * Time.deltaTime);
     }
-    void HandleHorizontalMovement()
+    void Move() 
     {
-        float z=Input.GetAxis("Horizontal");
-        transform.Translate(Speed*Time.deltaTime,0,-z*turnSpeed*Time.deltaTime);
+ 
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        if (horizontalInput != 0 && !isMoving)
+        {
+            float targetPosition;
+            if (horizontalInput < 0)
+            {
+                targetPosition = transform.position.x + moveDistance;
+            }
+            else
+            {
+                targetPosition = transform.position.x - moveDistance;
+            }
+
+            targetPosition = Mathf.Clamp(targetPosition, -1f, 1f);
+
+            if (targetPosition >= -1 && targetPosition <= 1)
+                StartCoroutine(MoveToPosition(targetPosition));
+        }
 
     }
+    
+
+    private IEnumerator MoveToPosition(float targetPosition)
+    {
+        isMoving = true;
+        float startPosition = transform.position.x;
+        float elapsedTime = 0f;
+        float moveDuration = 0.2f;
+
+        while (elapsedTime < moveDuration)
+        {
+            currentPosition = Mathf.Lerp(startPosition, targetPosition, elapsedTime / moveDuration);
+            transform.position = new Vector3(currentPosition, transform.position.y, transform.position.z);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = new Vector3(targetPosition, transform.position.y, transform.position.z);
+        isMoving = false;
+    }
+
     void jump()
     {
 

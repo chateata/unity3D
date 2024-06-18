@@ -10,7 +10,8 @@ public class MainMenu : MonoBehaviour
 
     private Vector2 startPosition;
     private Vector3 velocity;
-        void Start()
+    
+    void Start()
     {
         startPosition = transform.position;
     }
