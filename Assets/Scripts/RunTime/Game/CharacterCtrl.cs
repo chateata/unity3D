@@ -26,7 +26,7 @@ public class CharacterCtrl : MonoBehaviour
 
         float z=Input.GetAxis("Horizontal");
         
-        transform.Translate(Speed*Time.deltaTime,0,-z*turnSpeed*Time.deltaTime);
+        transform.Translate(-z*turnSpeed*Time.deltaTime,0,-Speed*Time.deltaTime);
 
     }
 }
