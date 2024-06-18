@@ -8,7 +8,7 @@ public class Block
     public int index;//在左中右哪个位置[-1,0,1]
 }
 
-public class MusicData 
+public class MusicData
 {
     public Block[] blocks;
 }
