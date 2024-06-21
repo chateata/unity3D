@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -9,34 +12,61 @@ public class EnemyAI : MonoBehaviour
     public float playerSpeed = 10f;
     public float followSpeed = 18f;
 
-    public float attackRange = 6f;
-    public float zdistance = 0f;
-    
+
+    public float zdistance_player = 0f;
+    public float zdistance_Obstacle = 0f;
+    public float attackRange = 5.5f;
+    public float escapeDistance = 5.4f;
+ 
+
  
     private bool isAttacking = false;
     private float attackTimer = 0f;
     private float attackTime = 10f;
 
+
     public Transform playerTransform;
+    public Transform obstacleTransform;
     private GameObject gameMgr;
     private float playerLastXpos;
+    private UnityEngine.Vector3 desiredPosition;
+   
     
 
     void Start()
     {
         playerTransform = GameObject.FindWithTag("Vehicle").transform;
+        obstacleTransform = GameObject.FindWithTag("Obstacle").transform;
         gameMgr = GameObject.FindWithTag("GameMgr");
+
         playerLastXpos = playerTransform.position.x;
+        
     }
+
 
     void Update()
     {
-        zdistance = Mathf.Abs(playerTransform.position.z - transform.position.z);
+        zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
+        zdistance_Obstacle = transform.position.z - obstacleTransform.position.z ;
 
-        FollowPlayer();
+        float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);
+        transform.Translate(UnityEngine.Vector3.forward * zSpeed * Time.deltaTime);
+
+        Debug.Log(zdistance_Obstacle);
+       
+        if (zdistance_Obstacle <= escapeDistance && zdistance_Obstacle >=0) {
+            AvoidObstacle();
+            Debug.Log("Oppps");
+            
+        }
+        else{
+            FollowPlayer();
+        }
+        
+
         
         //浮点误差！！
-        if(zdistance <= attackRange + 0.1f )
+        if(zdistance_player <= attackRange + 0.1f )
         {
             
             isAttacking = true;
@@ -52,10 +82,10 @@ public class EnemyAI : MonoBehaviour
 
         }else
         {
-           Debug.Log(attackTimer);
+        //    Debug.Log(attackTimer);
             isAttacking = false;
             attackTimer = 0f;
-            Debug.Log(attackTimer + " rest " + Time.time);
+            // Debug.Log(attackTimer + " rest " + Time.time);
         }
 
         
@@ -65,17 +95,20 @@ public class EnemyAI : MonoBehaviour
 
     void FollowPlayer()
     {
-        
-        float zSpeed = Mathf.Lerp(followSpeed,  playerSpeed, attackRange / zdistance);
-        transform.Translate(Vector3.forward * zSpeed * Time.deltaTime);
-
-        
         float targetX = playerTransform.position.x;
-        transform.position = new Vector3(Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * 3f), 0f, transform.position.z);
+        transform.position = new UnityEngine.Vector3(Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * 3f), 0f, transform.position.z);
         playerLastXpos = playerTransform.position.x;
 
         
     }
+
+    void AvoidObstacle()
+    {
+        float targetX = obstacleTransform.position.x - 1;
+        transform.position = new UnityEngine.Vector3(Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * 3f), 0f, transform.position.z);
+        playerLastXpos = playerTransform.position.x;
+    }
+    
 
     void AttackPlayer()
     {
