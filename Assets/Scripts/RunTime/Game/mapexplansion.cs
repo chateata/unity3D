@@ -44,7 +44,7 @@ class MapExplansion:MonoBehaviour{
         if (prefabIndex == -1)
         {
             
-            if(GameTimer <=20.180000f){
+            if(GameTimer <=122.180000f){
                 Debug.Log(GameTimer);
                 chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length)]) as GameObject;
                 
@@ -53,7 +53,7 @@ class MapExplansion:MonoBehaviour{
                 chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length)]) as GameObject;
                 CreatFloor(chunk);
                 chunk = GameObject.Instantiate(mapChunks[0]) as GameObject;
-                spawnZ += chunkLength;
+                spawnZ += 4*chunkLength;
             }
             
         }
