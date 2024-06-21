@@ -13,7 +13,7 @@ public class bgm1Pickup
             new Music{zTime=2.100000f, index=-1},
             new Music{zTime=3.970000f, index=0},
             new Music{zTime=7.800000f, index=0},
-            new Music{zTime=7.800000f, index=1},
+            new Music{zTime=7.800000f, index=-1},
             new Music{zTime=10.620000f, index=1},
             new Music{zTime=14.520000f, index=0},
             new Music{zTime=17.370000f, index=1},
