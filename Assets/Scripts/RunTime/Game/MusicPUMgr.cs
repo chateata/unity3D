@@ -74,7 +74,7 @@ public class MusicPUMgr : MonoBehaviour
         GameObject music = GameObject.Instantiate(this.blockPrefab);
         music.name = "music" + this.genIndex;
         music.transform.SetParent(this.blockRoot,false);
-        music.tag="MusicCoin";
+        music.tag="PickUp";
         Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, -this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
         music.transform.position=pos;
         this.genIndex++;
