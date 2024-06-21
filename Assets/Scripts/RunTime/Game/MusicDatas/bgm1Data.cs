@@ -10,17 +10,17 @@ public class bgm1Data
 
     public static MusicData data=new MusicData{
         blocks=new Block[]{
-            new Block{zTime=6.010000f, index=0},
-            new Block{zTime=7.810000f, index=-1},
-            new Block{zTime=11.350000f, index=0},
-            new Block{zTime=12.940000f, index=1},
-            new Block{zTime=25.810000f, index=0},
-            new Block{zTime=27.210000f, index=-1},
-            new Block{zTime=29.000000f, index=0},
-            new Block{zTime=30.460000f, index=1},
-            new Block{zTime=32.300000f, index=-1},
-            new Block{zTime=34.220000f, index=0},
-            new Block{zTime=36.080000f, index=1}
+            new Block{zTime=2.100000f, index=0},
+            new Block{zTime=3.970000f, index=-1},
+            new Block{zTime=5.800000f, index=0},
+            new Block{zTime=7.850000f, index=1},
+            new Block{zTime=9.720000f, index=0},
+            new Block{zTime=11.620000f, index=-1},
+            new Block{zTime=13.520000f, index=0},
+            new Block{zTime=17.370000f, index=1},
+            new Block{zTime=18.810000f, index=-1},
+            new Block{zTime=20.300000f, index=0},
+            new Block{zTime=23.180000f, index=1}
         }
     };
 }
