@@ -7,7 +7,7 @@ public float chunkLength = 10f; // 每个地图块的长度
 private Transform player; // 玩家或摄像机的 Transform 组件
 private List<GameObject> activeChunks = new List<GameObject>(); // 当前激活的地图块
 private float spawnZ = 0f; // 下一个地图块生成的 Z 坐标
-private int chunksOnScreen = 5; // 屏幕上显示的地图块数量
+private int chunksOnScreen = 6; // 屏幕上显示的地图块数量
 private float safeZone = 15f; // 安全区，决定何时删除不再显示的地图块
 
 
