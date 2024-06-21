@@ -26,7 +26,6 @@ public class Game : UnitySingleton<Game>
 
     public void EnterMainMenu()
     {
-        GameObject gameObject1;
         SceneManager.LoadScene("StartEditor");
     }
     
