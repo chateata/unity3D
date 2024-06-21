@@ -33,7 +33,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
             Time.timeScale = 1;
             return;
          }
