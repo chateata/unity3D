@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
   
 
 public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
 {
+    public Text ui;
     private Vector3 startPosition;
 
     public float moveDistance = 1f; 
@@ -42,6 +43,8 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
         jump();
 
         transform.Translate(transform.forward * speed * Time.deltaTime);
+
+        ui.text="Distance:"+(int)(speed*Time.time);
     }
     void Move() 
     {
