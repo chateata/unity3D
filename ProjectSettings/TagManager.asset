@@ -7,6 +7,7 @@ TagManager:
   - Vehicle
   - GameMgr
   - PickUp
+  - Obstacle
   layers:
   - Default
   - TransparentFX

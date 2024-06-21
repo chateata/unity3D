@@ -26,17 +26,17 @@ public class EnemyAI : MonoBehaviour
 
 
     public Transform playerTransform;
-    public Transform obstacleTransform;
+
     private GameObject gameMgr;
     private float playerLastXpos;
-    private UnityEngine.Vector3 desiredPosition;
+
    
     
 
     void Start()
     {
         playerTransform = GameObject.FindWithTag("Vehicle").transform;
-        obstacleTransform = GameObject.FindWithTag("Obstacle").transform;
+
         gameMgr = GameObject.FindWithTag("GameMgr");
 
         playerLastXpos = playerTransform.position.x;
@@ -47,21 +47,16 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
-        zdistance_Obstacle = transform.position.z - obstacleTransform.position.z ;
+
 
         float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);
         transform.Translate(UnityEngine.Vector3.forward * zSpeed * Time.deltaTime);
 
-        Debug.Log(zdistance_Obstacle);
+        
        
-        if (zdistance_Obstacle <= escapeDistance && zdistance_Obstacle >=0) {
-            AvoidObstacle();
-            Debug.Log("Oppps");
-            
-        }
-        else{
-            FollowPlayer();
-        }
+      
+        FollowPlayer();
+        
         
 
         
@@ -102,13 +97,6 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    void AvoidObstacle()
-    {
-        float targetX = obstacleTransform.position.x - 1;
-        transform.position = new UnityEngine.Vector3(Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * 3f), 0f, transform.position.z);
-        playerLastXpos = playerTransform.position.x;
-    }
-    
 
     void AttackPlayer()
     {
