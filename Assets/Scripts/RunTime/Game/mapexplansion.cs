@@ -12,6 +12,7 @@ class MapExplansion:MonoBehaviour{
 
     private MusicPUMgr musicPUMgr;
     private float GameTimer = 0f;
+    private int flag = 1;
 
     void Start()
     {
@@ -44,16 +45,19 @@ class MapExplansion:MonoBehaviour{
         if (prefabIndex == -1)
         {
             
-            if(GameTimer <=122.180000f){
-                Debug.Log(GameTimer);
-                chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length)]) as GameObject;
+            if(GameTimer <= 161.151f){
+                chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length-1)]) as GameObject;
                 
             }else
             {
-                chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length)]) as GameObject;
-                CreatFloor(chunk);
+                if (flag == 1){
+                    chunk = GameObject.Instantiate(mapChunks[1]) as GameObject;
+                    CreatFloor(chunk);
+                    flag = 0;
+                    spawnZ -= chunkLength;
+                }
+
                 chunk = GameObject.Instantiate(mapChunks[0]) as GameObject;
-                spawnZ += 4*chunkLength;
             }
             
         }

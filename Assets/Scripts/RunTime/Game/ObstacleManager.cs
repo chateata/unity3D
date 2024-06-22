@@ -6,25 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class ObstacleManager : MonoBehaviour
 {
-    
-    // private GameObject ball=null;
-    // private Transform gameCamera=null;
     private GameObject blockPrefab=null;
     private Transform blockRoot=null;
 
     private Block[] musicBlocks=null;
     private int totalBlocks=0;
     private int genIndex=0;
-    private AudioSource music=null;
+    private int desIndex = 0;
 
-    private float gameSpeed = 5f;
-    // private float gameGravity=0.0f;
+    private float gameSpeed = 8f;
 
-    // public static object Instance { get; internal set; }
+    private Transform player;
+    private float safeZone = 15f;
 
+    private List<GameObject> activeBlocks = new List<GameObject>(); 
+    
 
     void Start()
     {
+        player = GameObject.Find("Vehicle").transform;
+
         this.blockPrefab = this.transform.Find("Start").gameObject;
 
         this.musicBlocks = bgm1Data.data.blocks;
@@ -34,37 +35,16 @@ public class ObstacleManager : MonoBehaviour
             this.genOneBlock();
         }
 
-        // this.music.Play();
     }
 
     void Update() {
-        
-
-        //元素相关
-        // this.ball=this.transform.Find("ball").gameObject;
-        // this.gameCamera=this.transform.Find("Main Camera");
-        // this.blockPrefab = this.transform.Find("Start").gameObject;
-        // this.blockRoot = this.transform.Find("PlatRoot");
-        //end
-
-
-        //音乐相关，名字--》选取音乐
-        // this.musicBlocks = bgm1Data.data.blocks;
-        // this.totalBlocks = this.musicBlocks.Length;
-        //end
-
-        //放音乐
-        // this.music=this.gameObject.AddComponent<AudioSource>();
-        // this.music.clip=ResMgr.Instance.GetAssetCache<AudioClip>(bgm1Data.soundUr1);
-        // //end
-
-        //预先生成6个块；
-        // for(int i=0;i<6;i++){
-        //     this.genOneBlock();
-        // }
-        //end
         this.genOneBlock();
-
+        
+        if (-player.position.z - safeZone >= -activeBlocks[0].transform.position.z)
+        {
+           this.DestroyBlock();
+        }
+       
     }
 
     private void genOneBlock(){
@@ -74,9 +54,22 @@ public class ObstacleManager : MonoBehaviour
         GameObject block = GameObject.Instantiate(this.blockPrefab);
         block.name = "block" + this.genIndex;
         block.transform.SetParent(this.blockRoot,false);
-        Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, -this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
+        Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, player.position.z-this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
         block.transform.position=pos;
+        activeBlocks.Add(block);
         this.genIndex++;
+
+        // Debug.Log("Creat" + this.genIndex);
+       
+    }
+    private void DestroyBlock(){
+        if(this.genIndex <=this.desIndex){
+            return;
+        }
+        // Debug.Log("destroy" + desIndex);
+        Destroy(activeBlocks[0]);
+        activeBlocks.RemoveAt(0);
+        this.desIndex++;
     }
 
 }

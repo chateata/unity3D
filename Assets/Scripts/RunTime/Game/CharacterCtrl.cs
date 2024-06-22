@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,9 +15,9 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     public float moveDistance = 1f; 
     private float currentPosition; 
     private bool isMoving = false; 
-
-    public float speed = 10f;
-
+    public float speed = 5f;
+    private float lastHorizontalInputTime = 0f;
+    private float inputHoldTime = 0.3f; 
    
 
     [SerializeField] float jumpSpeed=2;
@@ -31,6 +32,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
     void Update()
     {
+       
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -41,32 +43,55 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
   
         Move();
         jump();
-
         transform.Translate(transform.forward * speed * Time.deltaTime);
 
         ui.text="Distance:"+(int)(speed*Time.time);
     }
     void Move() 
     {
- 
+        
+
         float horizontalInput = Input.GetAxis("Horizontal");
 
         if (horizontalInput != 0 && !isMoving)
         {
-            float targetPosition;
-            if (horizontalInput < 0)
-            {
-                targetPosition = transform.position.x + moveDistance;
-            }
-            else
-            {
-                targetPosition = transform.position.x - moveDistance;
-            }
+            float currentTime = Time.time;
 
-            targetPosition = Mathf.Clamp(targetPosition, -1f, 1f);
+            if (currentTime - lastHorizontalInputTime > inputHoldTime)
+            {
+                float targetPosition;
+                if (horizontalInput < 0)
+                {
+                    targetPosition = transform.position.x + moveDistance;
+                }
+                else
+                {
+                    targetPosition = transform.position.x - moveDistance;
+                }
 
-            if (targetPosition >= -1 && targetPosition <= 1)
-                StartCoroutine(MoveToPosition(targetPosition));
+                if (targetPosition >= 0.5f)
+                {
+                    targetPosition = 1f;
+                }
+                else if (targetPosition <= -0.5f)
+                {
+                    targetPosition = -1f;
+                }
+                else
+                {
+                    targetPosition = 0f;
+                }
+
+                targetPosition = Mathf.Clamp(targetPosition, -1f, 1f);
+
+                if (targetPosition >= -1 && targetPosition <= 1)
+                {
+                   
+                    StartCoroutine(MoveToPosition(targetPosition));
+                }
+
+                lastHorizontalInputTime = currentTime; 
+            }
         }
 
     }
@@ -77,11 +102,10 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
         isMoving = true;
         float startPosition = transform.position.x;
         float elapsedTime = 0f;
-        float moveDuration = 0.2f;
-
-        while (elapsedTime < moveDuration)
+       
+        while (elapsedTime < inputHoldTime)
         {
-            currentPosition = Mathf.Lerp(startPosition, targetPosition, elapsedTime / moveDuration);
+            currentPosition = Mathf.Lerp(startPosition, targetPosition, elapsedTime / inputHoldTime);
             transform.position = new Vector3(currentPosition, transform.position.y, transform.position.z);
 
             elapsedTime += Time.deltaTime;
@@ -90,6 +114,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
         transform.position = new Vector3(targetPosition, transform.position.y, transform.position.z);
         isMoving = false;
+        
     }
 
     void jump()

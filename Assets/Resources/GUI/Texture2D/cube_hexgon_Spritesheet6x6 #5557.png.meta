@@ -1,0 +1,932 @@
+fileFormatVersion: 2
+guid: df0f0dfad65cfe74b85e285d6ff19bdf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f354e587808021544a18f1b793481310
+      internalID: -1276435674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5198e46507856449b10c05604acd7d5
+      internalID: -1557100165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4685906c771f7cf4584b7a81ccea8361
+      internalID: 1915834582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc13449cb83701a41a002bc8086ac517
+      internalID: -485208161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b6cbd4d12a13e458a676dac32e5aa8
+      internalID: -1763032293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 426.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298487126241e2a41ab142b39ab0ad3d
+      internalID: -848647568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ebde6470c728e44a46bb0186a3ef21
+      internalID: -113642590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b58b047b0ea6dd419eaab8bf9283831
+      internalID: 1449833474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d5cfd2c1ce370498eb6d980e155302
+      internalID: -1588828884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3c360a8664d64488188615c94d5e3d
+      internalID: -812169945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993d0431af3667842906e85872739be8
+      internalID: 158300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 341.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a3a3f1d5c0290408181f5309d5a6fb
+      internalID: -248331067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b35ce345b2f8745a029131ada23549
+      internalID: 831184515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb6eaec395183b409a3bfcb29b654c7
+      internalID: 1966183244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3085e07f65f7d14592a921d80e1b7e9
+      internalID: 1261288551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea43b53571e454418ff2ced839cefb2
+      internalID: -1205714242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_16
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9286699ba064c4293b9d9e0cf5627f
+      internalID: 1156675466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 256.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552e4ac2ddb320e45b4049c6632fbbe4
+      internalID: -239541853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797d82be34891a14fa12a553293306f1
+      internalID: 601990825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033ffb1f4be4e8b4c94924c0de323a6c
+      internalID: -1036546907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3400fed8ee79315408a8082d9647e17c
+      internalID: 598668312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923cda5703ad69f4bbcc616f3f794d23
+      internalID: -386043551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cf32950df35104481dea638b501963
+      internalID: -563741832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 171.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575ea173d0c9a474787dd572874ff8c3
+      internalID: 1594621879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2775ffd2276dee04199c7b512ba33261
+      internalID: -278298617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5536258605c04042a89c833b709a130
+      internalID: -23677803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f75d98149916440a18b6b2124ba734
+      internalID: 1270299009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e099c227834d8c84d8e1530b8b792ad5
+      internalID: -299619769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee1ecf6364f60040a2c98f11c309496
+      internalID: -578323966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 86.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9909e016e7843a74685dfb7f92194922
+      internalID: 632935948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927f6262bf0096241975cc845a323385
+      internalID: -1401312642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_31
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e9114a1b8ddc54d83ba33ca3df035a
+      internalID: 672001055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_32
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2725460633012114d94ce47b11da59b9
+      internalID: 845393993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_33
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d506f854b00b64b8fee08532c00efb
+      internalID: 2068113955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ea06b9f7068954c9100def626825cb
+      internalID: -874261243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cube_hexgon_Spritesheet6x6 #5557_35
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80a8e261ca2fb842a6dbd7c756aa313
+      internalID: -193389805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ef2f6bf7994c3c544b27864883bc9a7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cube_hexgon_Spritesheet6x6 #5557_0: -1276435674
+      cube_hexgon_Spritesheet6x6 #5557_1: -1557100165
+      cube_hexgon_Spritesheet6x6 #5557_10: 158300042
+      cube_hexgon_Spritesheet6x6 #5557_11: -248331067
+      cube_hexgon_Spritesheet6x6 #5557_12: 831184515
+      cube_hexgon_Spritesheet6x6 #5557_13: 1966183244
+      cube_hexgon_Spritesheet6x6 #5557_14: 1261288551
+      cube_hexgon_Spritesheet6x6 #5557_15: -1205714242
+      cube_hexgon_Spritesheet6x6 #5557_16: 1156675466
+      cube_hexgon_Spritesheet6x6 #5557_17: -239541853
+      cube_hexgon_Spritesheet6x6 #5557_18: 601990825
+      cube_hexgon_Spritesheet6x6 #5557_19: -1036546907
+      cube_hexgon_Spritesheet6x6 #5557_2: 1915834582
+      cube_hexgon_Spritesheet6x6 #5557_20: 598668312
+      cube_hexgon_Spritesheet6x6 #5557_21: -386043551
+      cube_hexgon_Spritesheet6x6 #5557_22: -563741832
+      cube_hexgon_Spritesheet6x6 #5557_23: 1594621879
+      cube_hexgon_Spritesheet6x6 #5557_24: -278298617
+      cube_hexgon_Spritesheet6x6 #5557_25: -23677803
+      cube_hexgon_Spritesheet6x6 #5557_26: 1270299009
+      cube_hexgon_Spritesheet6x6 #5557_27: -299619769
+      cube_hexgon_Spritesheet6x6 #5557_28: -578323966
+      cube_hexgon_Spritesheet6x6 #5557_29: 632935948
+      cube_hexgon_Spritesheet6x6 #5557_3: -485208161
+      cube_hexgon_Spritesheet6x6 #5557_30: -1401312642
+      cube_hexgon_Spritesheet6x6 #5557_31: 672001055
+      cube_hexgon_Spritesheet6x6 #5557_32: 845393993
+      cube_hexgon_Spritesheet6x6 #5557_33: 2068113955
+      cube_hexgon_Spritesheet6x6 #5557_34: -874261243
+      cube_hexgon_Spritesheet6x6 #5557_35: -193389805
+      cube_hexgon_Spritesheet6x6 #5557_4: -1763032293
+      cube_hexgon_Spritesheet6x6 #5557_5: -848647568
+      cube_hexgon_Spritesheet6x6 #5557_6: -113642590
+      cube_hexgon_Spritesheet6x6 #5557_7: 1449833474
+      cube_hexgon_Spritesheet6x6 #5557_8: -1588828884
+      cube_hexgon_Spritesheet6x6 #5557_9: -812169945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
