@@ -907,8 +907,6 @@ MonoBehaviour:
   attackRange: 5.5
   playerTransform: {fileID: 137793663}
   EnemyTransform: {fileID: 622870673}
-  attackParticles: {fileID: 2715471840370901047, guid: df9374346b76e444dbbb2b019de4da25, type: 3}
-  attackParticlesPrefab: {fileID: 0}
 --- !u!4 &622870673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6156236065035474383, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
@@ -1563,8 +1561,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5716903279867945532, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
