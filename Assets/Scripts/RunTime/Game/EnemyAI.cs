@@ -8,7 +8,7 @@ public class EnemyAI : MonoBehaviour
 
     public float zdistance_player = 0f;
     public float zdistance_Obstacle = 0f;
-    public float attackRange = 5.5f;
+    public float attackRange = 5f;
 
  
     private bool isAttacking = false;
@@ -88,6 +88,7 @@ public class EnemyAI : MonoBehaviour
                 if (attackTimer >= attackTime)
                 {
                     Destroy(attackParticles);
+                    
                     attackTimer = 0f;
                     chargeTimer = 0f;
                     isAttacking = false;
@@ -110,7 +111,7 @@ public class EnemyAI : MonoBehaviour
     {
          if (gameObject != null)
         {
-            Vector3 pos= new Vector3(this.EnemyTransform.position.x, this.EnemyTransform.position.y + 0.6f, this.EnemyTransform.position.z - 1);
+            Vector3 pos= new Vector3(this.EnemyTransform.position.x, this.EnemyTransform.position.y+0.6f, this.EnemyTransform.position.z - 1);
             gameObject.transform.position = pos;
 
         }
@@ -133,8 +134,6 @@ public class EnemyAI : MonoBehaviour
             attackParticles.name = "attackParticles" ;
             attackParticles.transform.SetParent(this.EnemyTransform,false);
             attackParticles.transform.Rotate(Vector3.forward * 90f);
-           
-
             Debug.Log("Enemy attacked the player!");
         }else{
             Debug.Log("No attackParticles!");

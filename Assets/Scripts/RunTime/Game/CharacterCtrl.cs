@@ -29,7 +29,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     {
         startPosition = transform.position;
     }
-
+    
     void Update()
     {
        
