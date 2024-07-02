@@ -170,16 +170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameAudio: {fileID: 1447968476}
-  StartAudio: {fileID: 262449152}
   SfxAudio: {fileID: 1982388423}
   gameAudio: {fileID: 8300000, guid: e76d2db6be3ab7541b97c6854b887704, type: 3}
-  startAudio: {fileID: 8300000, guid: a3f656a941acc85439d85d52a73be523, type: 3}
   dash: {fileID: 0}
   pickUp: {fileID: 8300000, guid: 8a9302f70fcd4f24ab92db9c046c6717, type: 3}
   death: {fileID: 0}
   attack: {fileID: 0}
-  button: {fileID: 0}
-  close_button: {fileID: 0}
 --- !u!1 &22259340
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +561,18 @@ MonoBehaviour:
       - m_Target: {fileID: 378927172}
         m_TargetAssemblyTypeName: SettingCtrl, Assembly-CSharp
         m_MethodName: Con
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1447968476}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
