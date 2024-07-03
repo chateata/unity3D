@@ -6,9 +6,10 @@ public class EnergeScore : MonoBehaviour
 {
     public Text ui;
     public static int score=0;
+    SoundManager soundManager;
     void Start()
     {
-      
+      soundManager=GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -18,6 +19,7 @@ public class EnergeScore : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(this.tag == "PickUp"){
+            soundManager.PlaySfx(soundManager.pickUp);
             score++;
             ui.text = "score:"+score;
             Destroy(this.gameObject);

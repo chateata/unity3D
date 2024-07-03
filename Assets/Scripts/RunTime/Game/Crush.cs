@@ -4,19 +4,51 @@ using UnityEngine;
 
 public class Crush : MonoBehaviour
 {
+    
     private GameObject HitParticles = null;
     private GameObject HitParticlesPrefab = null;
-    public Transform VehicleTransform;
+
+    private CharacterCtrl player;
+    
     void Start()
     {
+        player = FindObjectOfType<CharacterCtrl>();
         HitParticlesPrefab = Resources.Load<GameObject>("Effects/Matthew Guz/Hits Effects FREE/Prefab/Basic Hit 2");
     }
 
     private void GetHit(Vector3 pos)
     {
-        HitParticles = Instantiate(HitParticlesPrefab, pos, Quaternion.identity);
-        HitParticles.name = "HitParticles" ;
-        HitParticles.transform.SetParent(this.VehicleTransform,false);
+        if(HitParticles == null)
+        {
+            player.speed = 0;
+            pos.z = 0;
+            HitParticles = Instantiate(HitParticlesPrefab, pos, Quaternion.identity);
+            HitParticles.name = "HitParticles" ;
+            HitParticles.transform.SetParent(player.transform,false);
+            HitParticles.transform.localScale = Vector3.one * 15f;
+            ParticleSystem hitParticles = HitParticles.GetComponent<ParticleSystem>();
+            
+            if (hitParticles != null)
+            {
+                hitParticles.Play();
+                StartCoroutine(WaitForParticlesAndDestroy(hitParticles));
+            }
+        }
+
+        
+        
+        
+    }
+
+    private System.Collections.IEnumerator WaitForParticlesAndDestroy(ParticleSystem hitParticles)
+    {
+        
+        while(hitParticles.isPlaying)
+        {
+            yield return null;
+        }
+
+        Destroy(hitParticles);
         Time.timeScale=0;
     }
 
@@ -33,20 +65,19 @@ public class Crush : MonoBehaviour
         }
         
     }
-
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("碰撞到了"+ other.name);
+        Debug.Log("OnParticleCollision:碰撞到了"+ other.name);
         if (other.name == "Slash")
         {
            
         }
 
-
-
         if (other.name == "Vehicle")
         {
-            Time.timeScale=0;
+            Vector3 collisionPosition = other.transform.position;
+            Debug.Log("Collided with " + other.name + " at position: " + collisionPosition);
+            GetHit(collisionPosition);
         }
 
         
