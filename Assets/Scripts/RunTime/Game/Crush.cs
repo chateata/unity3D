@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Crush : MonoBehaviour
 {
-    
+    SoundManager soundManager;
     private GameObject HitParticles = null;
     private GameObject HitParticlesPrefab = null;
 
@@ -13,6 +13,7 @@ public class Crush : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<CharacterCtrl>();
+        soundManager=GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
         HitParticlesPrefab = Resources.Load<GameObject>("Effects/Matthew Guz/Hits Effects FREE/Prefab/Basic Hit 2");
     }
 
@@ -47,8 +48,8 @@ public class Crush : MonoBehaviour
         {
             yield return null;
         }
-
         Destroy(hitParticles);
+        Debug.Log("撞到了");
         Time.timeScale=0;
     }
 
@@ -57,7 +58,7 @@ public class Crush : MonoBehaviour
         // Debug.Log("OnTriggerEnter:碰撞到了"+ other.name);
 
         if(other.tag=="Obstacle"){
-            
+            soundManager.PlaySfx(soundManager.death);
             GameObject collidedObject = other.gameObject;
             Vector3 collisionPosition = other.ClosestPoint(transform.position);
             // Debug.Log("Collided with " + collidedObject.name + " at position: " + collisionPosition);
