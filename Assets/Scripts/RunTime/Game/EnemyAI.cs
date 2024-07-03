@@ -3,11 +3,11 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
   
-    public float playerSpeed = 10f;
-    public float followSpeed = 18f;
+    private float playerSpeed = 0f;
+    private float followSpeed = 0f;
 
-    public float zdistance_player = 0f;
-    public float zdistance_Obstacle = 0f;
+    private float zdistance_player = 0f;
+    private float zdistance_Obstacle = 0f;
     public float attackRange = 5f;
 
  
@@ -26,14 +26,17 @@ public class EnemyAI : MonoBehaviour
     private GameObject chargeParticlesPrefab = null;
     private GameObject attackParticlesPrefab = null;
  
+    public CharacterCtrl player;
 
    
     
 
     void Start()
     {
-        playerTransform = GameObject.FindWithTag("Vehicle").transform;
-
+        player = FindObjectOfType<CharacterCtrl>();
+        playerTransform = player.transform;
+        playerSpeed = player.speed;
+        followSpeed = player.speed + 8f;
         gameMgr = GameObject.FindWithTag("GameMgr");
 
         playerLastXpos = playerTransform.position.x;
@@ -47,6 +50,9 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        playerSpeed = player.speed;
+        followSpeed = player.speed + 8f;
+        
         zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
 
 

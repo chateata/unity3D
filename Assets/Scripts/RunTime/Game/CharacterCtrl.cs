@@ -25,9 +25,14 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     [SerializeField] float fallSpeed=10;
     [SerializeField] float jumpTarget=0; 
 
+  
+   
+
+    
     void Start()
     {
         startPosition = transform.position;
+        
     }
     
     void Update()
@@ -96,7 +101,6 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
 
     }
     
-
     private IEnumerator MoveToPosition(float targetPosition)
     {
         isMoving = true;
@@ -116,7 +120,6 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
         isMoving = false;
         
     }
-
     void jump()
     {
 
@@ -141,4 +144,6 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
             }
         }
     }
+
+    
 }

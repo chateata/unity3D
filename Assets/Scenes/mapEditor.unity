@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 0}
-  followSpeed: 10
+  player: {fileID: 0}
 --- !u!114 &279474293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,23 +1164,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &281816668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3536280854866799698, guid: b8a253daa19790a4098ad8ded9a34be9, type: 3}
-  m_PrefabInstance: {fileID: 7442109918560264223}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &281816670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281816668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0469060ac50970947a4c34cd67e0d41e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &378927170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,13 +1538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17f48fac51fee14ca6004f30df25226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 8
-  followSpeed: 18
-  zdistance_player: 0
-  zdistance_Obstacle: 0
   attackRange: 5.5
   playerTransform: {fileID: 137793663}
   EnemyTransform: {fileID: 622870673}
+  player: {fileID: 724621839}
 --- !u!4 &622870673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6156236065035474383, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
@@ -1780,7 +1760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461b23966a33150449b5f799f9596769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VehicleTransform: {fileID: 137793663}
 --- !u!1 &742259966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,9 +2810,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2761365613002177028, guid: b8a253daa19790a4098ad8ded9a34be9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2020025006}
-    - targetCorrespondingSourceObject: {fileID: 3536280854866799698, guid: b8a253daa19790a4098ad8ded9a34be9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 281816670}
   m_SourcePrefab: {fileID: 100100000, guid: b8a253daa19790a4098ad8ded9a34be9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
