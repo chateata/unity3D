@@ -4899,7 +4899,7 @@ GameObject:
   - component: {fileID: 7814322335980781562}
   - component: {fileID: 5006796969897636787}
   - component: {fileID: 796459911434209747}
-  - component: {fileID: 7375877302320724380}
+  - component: {fileID: 5469185052207371552}
   m_Layer: 0
   m_Name: Slash
   m_TagString: Untagged
@@ -9778,7 +9778,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &7375877302320724380
+--- !u!114 &5469185052207371552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
