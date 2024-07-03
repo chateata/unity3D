@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &94575614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3959827498273282479, guid: cce5aae56b300284e87c215df425a121, type: 3}
+  m_PrefabInstance: {fileID: 538957495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116706597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -185,7 +190,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5972732768437297760, guid: 65a9dee1cdf21dc4fb48917ca4be95ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1600575871}
+    - targetCorrespondingSourceObject: {fileID: 5972732768437297760, guid: 65a9dee1cdf21dc4fb48917ca4be95ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1600575870}
   m_SourcePrefab: {fileID: 100100000, guid: 65a9dee1cdf21dc4fb48917ca4be95ba, type: 3}
 --- !u!1 &505881824 stripped
 GameObject:
@@ -295,7 +306,7 @@ MonoBehaviour:
           m_StringArgument: button
           m_BoolArgument: 1
         m_CallState: 2
---- !u!1001 &511285799
+--- !u!1001 &538957495
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -345,18 +356,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4714587324347292169, guid: cce5aae56b300284e87c215df425a121, type: 3}
       propertyPath: m_Name
-      value: GameObject
+      value: PrefabFinal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cce5aae56b300284e87c215df425a121, type: 3}
---- !u!1 &511285800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3959827498273282479, guid: cce5aae56b300284e87c215df425a121, type: 3}
-  m_PrefabInstance: {fileID: 511285799}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &801896566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1105891141513782103, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
@@ -677,6 +683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6783697267335565173, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -917,6 +927,42 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1600575869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5972732768437297760, guid: 65a9dee1cdf21dc4fb48917ca4be95ba, type: 3}
+  m_PrefabInstance: {fileID: 116706597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1600575870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600575869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b37e77ddcd2f041840b1bfb07b0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothingDuration: 0.5
+--- !u!114 &1600575871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600575869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc6bbee5292fca47b96cc08a32b3c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalScroll: {fileID: 0}
+--- !u!1 &1639011537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111974273823709618, guid: cce5aae56b300284e87c215df425a121, type: 3}
+  m_PrefabInstance: {fileID: 538957495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1640200259 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8757881382119617229, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
@@ -1451,13 +1497,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapChunks:
-  - {fileID: 511285800}
+  - {fileID: 94575614}
   - {fileID: 6793951527884279607}
   - {fileID: 6793951527884279606}
   - {fileID: 6793951527884279605}
   - {fileID: 6793951527884279604}
   - {fileID: 6793951527884279603}
+  - {fileID: 1639011537}
   chunkLength: 10
+  timeCtrl: {fileID: 0}
+  gameMgr: {fileID: 0}
 --- !u!114 &6793951527884279602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,4 +1614,4 @@ SceneRoots:
   - {fileID: 7810604025184862409}
   - {fileID: 4554985483747923857}
   - {fileID: 1042985068}
-  - {fileID: 511285799}
+  - {fileID: 538957495}

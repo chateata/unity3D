@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,18 +121,370 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325026e5ae6353b48aafac6cbb6142ab
+      internalID: 1198798166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecca73832b78a046a95e18c695ebe48
+      internalID: 619348217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69b48500cd8b9a44b13bd78e7b3a231
+      internalID: 1599774707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b5421216f4b541b88d9aa5c4242e6
+      internalID: 1547156776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f4f9dfcf3957643a350cbfd9050f7f
+      internalID: 1295649302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc56490ab23d6c4c84292df9bb6792c
+      internalID: 999937450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1542bc49a307e6c4b98d269550bdfa88
+      internalID: 1723942117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad1f3f579c37124a829b3fd58c2caba
+      internalID: 1136236887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043bc2f0982ac0948b567e78b114a517
+      internalID: -1111484622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943a91aa3e386d84da7f6511a8a33317
+      internalID: -850267683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec85fa98c16d96a4bb636c3c4d874804
+      internalID: -918047919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066aaa6defc4c3478d6cbd306e7dba2
+      internalID: -1970232872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5704430b538f36418ed09b36019790d
+      internalID: 1472145747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d885a6d24c913ad4cb84ceef22f74348
+      internalID: 259422099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7382cc4f05896e44a5422c6916f53f9
+      internalID: 2056867921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effect_combo_texture_set2(big)_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c8ccc66fe279e4b9794a93e5db71e2
+      internalID: 1954060475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b08eb0a0d07a059459eb54a68b95b705
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      effect_combo_texture_set2(big)_0: 1198798166
+      effect_combo_texture_set2(big)_1: 619348217
+      effect_combo_texture_set2(big)_10: -918047919
+      effect_combo_texture_set2(big)_11: -1970232872
+      effect_combo_texture_set2(big)_12: 1472145747
+      effect_combo_texture_set2(big)_13: 259422099
+      effect_combo_texture_set2(big)_14: 2056867921
+      effect_combo_texture_set2(big)_15: 1954060475
+      effect_combo_texture_set2(big)_2: 1599774707
+      effect_combo_texture_set2(big)_3: 1547156776
+      effect_combo_texture_set2(big)_4: 1295649302
+      effect_combo_texture_set2(big)_5: 999937450
+      effect_combo_texture_set2(big)_6: 1723942117
+      effect_combo_texture_set2(big)_7: 1136236887
+      effect_combo_texture_set2(big)_8: -1111484622
+      effect_combo_texture_set2(big)_9: -850267683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

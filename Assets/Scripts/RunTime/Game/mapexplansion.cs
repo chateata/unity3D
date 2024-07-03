@@ -9,16 +9,20 @@ class MapExplansion:MonoBehaviour{
     private float spawnZ = 0f; // 下一个地图块生成的 Z 坐标
     private int chunksOnScreen = 7; // 屏幕上显示的地图块数量
     private float safeZone = 15f; // 安全区，决定何时删除不再显示的地图块
-
-    private MusicPUMgr musicPUMgr;
+    public TimeCtrl timeCtrl;
+    
+    public GameMgr gameMgr;
     private float GameTimer = 0f;
-    private int flag = 1;
+    private int flag = 0;
 
     void Start()
     {
-        player = Camera.main.transform; // 获取主摄像机的 Transform 组件
+        player = Camera.main.transform;
         GameTimer = 0f;
-        // 初始生成地图块
+        gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
+        timeCtrl = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TimeCtrl>();
+        Debug.Log("" + gameMgr);
+        
         for (int i = 0; i < chunksOnScreen; i++)
         {
             SpawnChunk();
@@ -27,37 +31,57 @@ class MapExplansion:MonoBehaviour{
 
     void Update()
     {
-        // 当玩家位置超过最后一个地图块的安全区时，生成新地图块并删除旧地图块
         if (-player.position.z - safeZone > (spawnZ - chunksOnScreen * chunkLength))
         {
             SpawnChunk();
             DeleteChunk();
         }
         GameTimer += Time.deltaTime;
+
+        if(flag!=0)
+        {
+            if(Time.timeScale == 0) gameMgr.GameOver(true);
+        }
     }
         
         
-
+    void Win()
+    {
+        Debug.Log("Start");
+        timeCtrl.SlowdownToZero(5f);
+    }
 
     void SpawnChunk(int prefabIndex = -1)
     {
         GameObject chunk;
-        if (prefabIndex == -1)
+        if (prefabIndex == -1 )
         {
             
-            if(GameTimer <= 161.151f){
-                chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length-1)]) as GameObject;
+            if(GameTimer <= 165.151f){
+                chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length-2)]) as GameObject;
                 
             }else
             {
-                if (flag == 1){
+                if( flag == 0 ) 
+                {
+                    flag ++;
                     chunk = GameObject.Instantiate(mapChunks[1]) as GameObject;
                     CreatFloor(chunk);
-                    flag = 0;
                     spawnZ -= chunkLength;
+                }else if( flag == 5){
+                   
+                    chunk = GameObject.Instantiate(mapChunks[6]) as GameObject;
+                    flag ++;
+                    CreatFloor(chunk);
                 }
-
+               
                 chunk = GameObject.Instantiate(mapChunks[0]) as GameObject;
+                flag++;
+                Invoke("Win", 5f);
+                
+             
+               
+                
             }
             
         }
@@ -68,6 +92,7 @@ class MapExplansion:MonoBehaviour{
         CreatFloor(chunk);
        
     }
+    
 
     void CreatFloor(GameObject chunk ){
         chunk.transform.SetParent(transform);

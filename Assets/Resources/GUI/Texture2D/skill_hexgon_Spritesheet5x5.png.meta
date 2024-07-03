@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,18 +121,568 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cba9a6850a1af44b9bfcfaee884a395
+      internalID: 992763942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 409.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2394f8b6b4e56a14faf38ea38667e66c
+      internalID: 2042941458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 409.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d923fcb693dabae4db5146683695919a
+      internalID: -173052102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 409.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dd6109d5f370d4989883ede09a19d6
+      internalID: -1087482608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 409.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638e2639776490748b51cd9c24e16b1f
+      internalID: 1996401515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b374488cf4eaeee43ba163c5abe06cce
+      internalID: 952412381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 307.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b3dca0d48deef4480206f437f71956
+      internalID: 1395906631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 307.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc689e399898c24184f3c510f4ee9b6
+      internalID: -2117358057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 307.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a886762d11b90b418944031b1d7dafa
+      internalID: 1736374264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 307.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64975a786ef3ad47a924ebe01b84272
+      internalID: -291748392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c804837b31c33ba448bc753152b7bacd
+      internalID: 351187134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 205.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38c875c7ae4d1247916406d5313cea4
+      internalID: 635341031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_12
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 205.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea78cce0525fdc499a178e211ac2995
+      internalID: 1258879462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_13
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 205.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f31c2112dd4dc48b752ca154e48e52
+      internalID: 2087008591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 205.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47e8646ef5ff574daca2e065f6e279f
+      internalID: 961432677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49713df8200d54746af8aa6c82f4e31f
+      internalID: -264671648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 103.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abddd73980033f84e94f76571e4b8628
+      internalID: 902499421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 103.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d540cf261ac5dc34e876c4ccdd5b6ccb
+      internalID: -1996361117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_18
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 103.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eacc2c766fe1f41b26ba2cbf639d3b
+      internalID: 662297716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 103.6
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14a9ce3ef50ba247876516f2d48bfdb
+      internalID: -1505672613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5999985
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b9b3fc54b27c54e877a06eb9d3ed7e
+      internalID: 1284166115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1.5999985
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f69dd47e53fd24b97eaf731c50b97b
+      internalID: 1255139473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1.5999985
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee29d541aaf898c41bb2917e8d468813
+      internalID: 1536646721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_23
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1.5999985
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a507c28f2454d174a81e80383f75296e
+      internalID: -2002908511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_hexgon_Spritesheet5x5_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1.5999985
+        width: 102.4
+        height: 102.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d5df9ad19d8384983fc10913d28c20
+      internalID: -351171199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f73eb765c2410984b8b5d4fd0c770918
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      skill_hexgon_Spritesheet5x5_0: 992763942
+      skill_hexgon_Spritesheet5x5_1: 2042941458
+      skill_hexgon_Spritesheet5x5_10: 351187134
+      skill_hexgon_Spritesheet5x5_11: 635341031
+      skill_hexgon_Spritesheet5x5_12: 1258879462
+      skill_hexgon_Spritesheet5x5_13: 2087008591
+      skill_hexgon_Spritesheet5x5_14: 961432677
+      skill_hexgon_Spritesheet5x5_15: -264671648
+      skill_hexgon_Spritesheet5x5_16: 902499421
+      skill_hexgon_Spritesheet5x5_17: -1996361117
+      skill_hexgon_Spritesheet5x5_18: 662297716
+      skill_hexgon_Spritesheet5x5_19: -1505672613
+      skill_hexgon_Spritesheet5x5_2: -173052102
+      skill_hexgon_Spritesheet5x5_20: 1284166115
+      skill_hexgon_Spritesheet5x5_21: 1255139473
+      skill_hexgon_Spritesheet5x5_22: 1536646721
+      skill_hexgon_Spritesheet5x5_23: -2002908511
+      skill_hexgon_Spritesheet5x5_24: -351171199
+      skill_hexgon_Spritesheet5x5_3: -1087482608
+      skill_hexgon_Spritesheet5x5_4: 1996401515
+      skill_hexgon_Spritesheet5x5_5: 952412381
+      skill_hexgon_Spritesheet5x5_6: 1395906631
+      skill_hexgon_Spritesheet5x5_7: -2117358057
+      skill_hexgon_Spritesheet5x5_8: 1736374264
+      skill_hexgon_Spritesheet5x5_9: -291748392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

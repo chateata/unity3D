@@ -6,15 +6,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class GameMgr : UnitySingleton<GameMgr>
+public class GameMgr : MonoBehaviour
 {
     public SelectScrollHorizon horizontalScroll;
     private int currentLevelIndex = 0;
+
     int[] levelScores = null;
 
-    public override void Awake()
+    private void Awake()
     {
-        base.Awake();
+       
+       
         if (horizontalScroll != null)
         {
             int num = 3;
@@ -40,17 +42,29 @@ public class GameMgr : UnitySingleton<GameMgr>
             }
             Debug.Log("Start");
             horizontalScroll.SetItemsInfo(names, textures, descriptions,levelScores);
-        }
-
-        horizontalScroll.SelectAction += (index) =>
+             horizontalScroll.SelectAction += (index) =>
         {
             print(index);
         };
+        }
+
+       
     }
-    public void GameOver()
+
+    public void GameOver(bool win)
     {
-        SceneManager.LoadScene(0);
-        Time.timeScale = 1;
+        if(win)
+        {
+            SceneManager.LoadScene(0);
+            // SceneManager.LoadScene("WinIntetface");
+            // Time.timeScale = 1;
+           
+        }else{
+            SceneManager.LoadScene(0);
+            // SceneManager.LoadScene("FailInterface");
+            // Time.timeScale = 1;
+        }
+        
         return;
     }
     public int GetCurrentLevelIndex()

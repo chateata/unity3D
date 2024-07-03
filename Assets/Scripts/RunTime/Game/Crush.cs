@@ -8,19 +8,23 @@ public class Crush : MonoBehaviour
     private GameObject HitParticles = null;
     private GameObject HitParticlesPrefab = null;
 
+
+    private GameMgr gameMgr;
+
     private CharacterCtrl player;
-    
+
     void Start()
     {
         player = FindObjectOfType<CharacterCtrl>();
-        Debug.Log("player");
+      
         soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
         HitParticlesPrefab = Resources.Load<GameObject>("Effects/Matthew Guz/Hits Effects FREE/Prefab/Basic Hit 2");
+        gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
     }
 
-    private void GetHit(Vector3 pos)
+    private void GetHit(Vector3 pos,bool isPlayer)
     {
-        if(HitParticles == null)
+        if(HitParticles == null && isPlayer)
         {
             player.speed = 0;
             pos.z = 0;
@@ -34,12 +38,9 @@ public class Crush : MonoBehaviour
             {
                 hitParticles.Play();
                 StartCoroutine(WaitForParticlesAndDestroy(hitParticles));
+                
             }
         }
-
-        
-        
-        
     }
 
     private System.Collections.IEnumerator WaitForParticlesAndDestroy(ParticleSystem hitParticles)
@@ -52,34 +53,30 @@ public class Crush : MonoBehaviour
         Destroy(hitParticles);
         Debug.Log("撞到了");
         Time.timeScale=0;
+        gameMgr.GameOver(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // Debug.Log("OnTriggerEnter:碰撞到了"+ other.name);
-
-        if(other.tag=="Obstacle"){
+        if(other.tag=="Obstacle" && this.tag == "Vehicle"){
             soundManager.PlaySfx(soundManager.death);
             GameObject collidedObject = other.gameObject;
             Vector3 collisionPosition = other.ClosestPoint(transform.position);
             // Debug.Log("Collided with " + collidedObject.name + " at position: " + collisionPosition);
-            GetHit(collisionPosition);
+            GetHit(collisionPosition, true);
         }
         
     }
     private void OnParticleCollision(GameObject other)
     {
         // Debug.Log("OnParticleCollision:碰撞到了"+ other.name);
-        if (other.name == "Slash")
-        {
-           
-        }
 
         if (other.tag == "Vehicle")
         {
             Vector3 collisionPosition = other.transform.position;
             // Debug.Log("Collided with " + other.name + " at position: " + collisionPosition);
-            GetHit(collisionPosition);
+            GetHit(collisionPosition,true);
         }
 
         
