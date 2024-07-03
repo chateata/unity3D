@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Boot.unity
+    path: Assets/Resources/Scenes/Boot.unity
     guid: 7b7828834ebebd14f953f312cd7b2d13
   - enabled: 1
-    path: Assets/Scenes/StartEditor.unity
+    path: Assets/Resources/Scenes/StartEditor.unity
     guid: 725ce6d52a4cc5442be37e785b9c6198
   - enabled: 1
-    path: Assets/Scenes/CheckpointEditor.unity
+    path: Assets/Resources/Scenes/CheckpointEditor.unity
     guid: 229bc50a8e56b63429297fe47c1c3f8d
   - enabled: 1
-    path: Assets/Scenes/mapEditor.unity
+    path: Assets/Resources/Scenes/mapEditor.unity
     guid: 5b659a19206828244b0dbbf363580e60
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ebcb757fbe7e6844891c6c8e688e6d42, type: 2}

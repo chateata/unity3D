@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class checkPoint : MonoBehaviour
 {
-    
+    StartAudio startAudio;
+    void Start(){
+        startAudio=GameObject.FindGameObjectWithTag("Audio").GetComponent<StartAudio>();
+    }
     public void Play()
    {
-    SceneManager.LoadScene("mapEditor");
+        startAudio.PlaySfx(startAudio.button);
+        SceneManager.LoadScene("mapEditor");
    }
 
    public void Quit()
