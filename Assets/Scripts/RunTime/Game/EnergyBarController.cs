@@ -16,17 +16,7 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
     }
 
     public void AddEnergy(float amount){
-        // for(int i=0;i<5;i++){
-        //     currentEnergy += 1;
-        //     UpdateEnergyBar();
-        // }
         StartCoroutine(SmoothIncreaseEnergy(amount));
-
-
-        // if(currentEnergy > maxEnergy){
-        //     UpSpeed();
-        // }
-
     }
 
     private IEnumerator SmoothIncreaseEnergy(float amount){
@@ -49,6 +39,6 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
     }
 
     void UpSpeed(){
-
+        
     }
 }
