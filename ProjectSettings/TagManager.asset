@@ -8,7 +8,7 @@ TagManager:
   - GameMgr
   - PickUp
   - Obstacle
-  - Hit
+  - Audio
   layers:
   - Default
   - TransparentFX
