@@ -13,7 +13,8 @@ public class Crush : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<CharacterCtrl>();
-        soundManager=GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
+        Debug.Log("player");
+        soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
         HitParticlesPrefab = Resources.Load<GameObject>("Effects/Matthew Guz/Hits Effects FREE/Prefab/Basic Hit 2");
     }
 
@@ -74,7 +75,7 @@ public class Crush : MonoBehaviour
            
         }
 
-        if (other.name == "Vehicle")
+        if (other.tag == "Vehicle")
         {
             Vector3 collisionPosition = other.transform.position;
             // Debug.Log("Collided with " + other.name + " at position: " + collisionPosition);

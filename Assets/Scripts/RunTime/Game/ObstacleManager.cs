@@ -24,7 +24,7 @@ public class ObstacleManager : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Vehicle").transform;
+        player = GameObject.FindWithTag("Vehicle").transform;
 
         this.blockPrefab = this.transform.Find("Start").gameObject;
 
