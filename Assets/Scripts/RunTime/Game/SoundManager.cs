@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioControl : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
     [SerializeField] AudioSource GameAudio;
     [SerializeField] AudioSource StartAudio;
@@ -21,5 +21,9 @@ public class AudioControl : MonoBehaviour
     {
         GameAudio.clip=gameAudio;
         GameAudio.Play();
+    }
+    public void PlaySfx(AudioClip clip)
+    {
+        SfxAudio.PlayOneShot(clip);
     }
 }
