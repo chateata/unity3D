@@ -54,20 +54,20 @@ public class Crush : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OnTriggerEnter:碰撞到了"+ other.name);
+        // Debug.Log("OnTriggerEnter:碰撞到了"+ other.name);
 
         if(other.tag=="Obstacle"){
             
             GameObject collidedObject = other.gameObject;
             Vector3 collisionPosition = other.ClosestPoint(transform.position);
-            Debug.Log("Collided with " + collidedObject.name + " at position: " + collisionPosition);
+            // Debug.Log("Collided with " + collidedObject.name + " at position: " + collisionPosition);
             GetHit(collisionPosition);
         }
         
     }
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("OnParticleCollision:碰撞到了"+ other.name);
+        // Debug.Log("OnParticleCollision:碰撞到了"+ other.name);
         if (other.name == "Slash")
         {
            
@@ -76,7 +76,7 @@ public class Crush : MonoBehaviour
         if (other.name == "Vehicle")
         {
             Vector3 collisionPosition = other.transform.position;
-            Debug.Log("Collided with " + other.name + " at position: " + collisionPosition);
+            // Debug.Log("Collided with " + other.name + " at position: " + collisionPosition);
             GetHit(collisionPosition);
         }
 

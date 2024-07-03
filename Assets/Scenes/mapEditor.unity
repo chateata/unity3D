@@ -796,6 +796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1105891141513782103, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
+      propertyPath: m_Text
+      value: Distance:0
+      objectReference: {fileID: 0}
     - target: {fileID: 3802123810207447464, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -899,6 +903,10 @@ PrefabInstance:
     - target: {fileID: 6134832894747736279, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8757881382119617229, guid: fbefb72f2b0d37542aece2ead60fd78b, type: 3}
+      propertyPath: m_Text
+      value: Score:0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -9,6 +9,8 @@ TagManager:
   - PickUp
   - Obstacle
   - Audio
+  - Undefined
+  - Hit
   layers:
   - Default
   - TransparentFX
