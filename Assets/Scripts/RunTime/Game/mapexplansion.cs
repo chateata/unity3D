@@ -57,7 +57,7 @@ class MapExplansion:MonoBehaviour{
         if (prefabIndex == -1 )
         {
             
-            if(GameTimer <= 10.151f){
+            if(GameTimer <= 90.151f){
                 chunk = GameObject.Instantiate(mapChunks[Random.Range(1, mapChunks.Length-2)]) as GameObject;
                 
             }else
