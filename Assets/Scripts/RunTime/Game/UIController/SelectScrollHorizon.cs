@@ -15,13 +15,12 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
         public string name;
         public Texture texture;
         public string description;
-        public int score;
-        public ItemInfo(string name, Texture texture, string description, int score)
+        
+        public ItemInfo(string name, Texture texture, string description)
         {
             this.name = name;
             this.texture = texture;
             this.description = description;
-            this.score = score;
         }
    }
 
@@ -69,12 +68,14 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
     private bool isSelected;
 
     public int index;
+    private GameMgr gameMgr;
 
     private void Start()
     {
         index = 0;
         Init();
         MoveItem(0);
+        gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
     }
 
     private void Init()
@@ -94,10 +95,10 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
     /// <param name="names">选项名称</param>
     /// <param name="textures">选项图片</param>
     /// <param name="descriptions">选项描述</param>
-    public void SetItemsInfo(string[] names, Texture[] textures, string[] descriptions, int[] score)
+    public void SetItemsInfo(string[] names, Texture[] textures, string[] descriptions)
     {
         if(names.Length != textures.Length || textures.Length != descriptions.Length 
-            || descriptions.Length != score.Length || score.Length != names.Length)
+            || descriptions.Length != names.Length)
         {
             Debug.Log("数据不完整");
             return;
@@ -106,7 +107,7 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
         itemInfos = new ItemInfo[names.Length];
         for(int i = 0; i < itemInfos.Length; i++)
         {
-            itemInfos[i] = new ItemInfo(names[i], textures[i],descriptions[i],score[i]);
+            itemInfos[i] = new ItemInfo(names[i], textures[i],descriptions[i]);
         }
         SelectAction = null;
         isSelected = false;
@@ -153,7 +154,6 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
             }
             items[i].SetInfo(itemInfos[infoIndex].texture, itemInfos[infoIndex]. name,
             itemInfos[infoIndex].description,
-            itemInfos[infoIndex].score,
             infoIndex, this);
             infoIndex++;
         }
@@ -166,7 +166,7 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
                 infoIndex=itemInfos.Length-1;
             }
       
-            items[i].SetInfo(itemInfos[infoIndex].texture, itemInfos[infoIndex]. name,itemInfos[infoIndex].description,itemInfos[infoIndex].score,infoIndex, this);
+            items[i].SetInfo(itemInfos[infoIndex].texture, itemInfos[infoIndex]. name,itemInfos[infoIndex].description,infoIndex, this);
             infoIndex--;
 
         }
@@ -212,8 +212,16 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
         descriptionText.text = items[minIndex].description;
         index = items[minIndex].infoIndex;
         worldNameText.text = "World " + (items[minIndex].infoIndex+1);
+
+
+
+
+
+        Debug.Log("1 levelScores[levelIndex]:" + gameMgr.GetLevelScore(index));
+
         levelNameText.text = items[minIndex].levelName;
-        scoreText.text = items[minIndex].score == -1? "Locked" :"score:" +items[minIndex].score;
+        scoreText.text = gameMgr.GetLevelScore(index) == -1? "Locked" :"score:" + gameMgr.GetLevelScore(index);
+
         currentItemIndex = items[minIndex].itemIndex;
 
     

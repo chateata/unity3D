@@ -23,8 +23,6 @@ public class SelectScrollItem : MonoBehaviour, IDragHandler, IPointerDownHandler
     public string levelName;
     [Tooltip("Description")]
     public string description;
-    [Tooltip("Score")]
-    public int score;
 
     private SelectScrollHorizon selectScrollHorizon;
     [HideInInspector] public RectTransform rectTransform;
@@ -43,7 +41,7 @@ public class SelectScrollItem : MonoBehaviour, IDragHandler, IPointerDownHandler
     /// <param name="description"></param>
     /// <param name="infoIndex"></param>
     /// <param name="selectScrollHorizon"></param>
-    public void SetInfo(Texture texture, string name, string description,int score, int infoIndex,
+    public void SetInfo(Texture texture, string name, string description, int infoIndex,
        SelectScrollHorizon selectScrollHorizon)
        {
             image.texture = texture;
@@ -53,7 +51,6 @@ public class SelectScrollItem : MonoBehaviour, IDragHandler, IPointerDownHandler
             desText.text = description;
             this.infoIndex = infoIndex;
             this.levelName = name;
-            this.score = score;
             this.selectScrollHorizon = selectScrollHorizon;
        }
 
