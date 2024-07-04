@@ -56,7 +56,7 @@ public class GameMgr : MonoBehaviour
         if(win)
         {
             
-            SceneManager.LoadScene("WinIntetface");
+            SceneManager.LoadScene("WinInterface");
             Time.timeScale = 1;
            
         }else{
