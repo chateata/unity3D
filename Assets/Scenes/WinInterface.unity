@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f103359b7a00e1f42a8be2e5387527a1, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4ebe0cdf3e35a7440b71c0c23c96b9b1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -986,6 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalScroll: {fileID: 0}
+  levelLength: 3
 --- !u!114 &1543751013
 MonoBehaviour:
   m_ObjectHideFlags: 0
