@@ -8,7 +8,6 @@ public class Crush : MonoBehaviour
     private GameObject HitParticles = null;
     private GameObject HitParticlesPrefab = null;
 
-
     private GameMgr gameMgr;
 
     private CharacterCtrl player;
@@ -52,6 +51,7 @@ public class Crush : MonoBehaviour
         }
         Destroy(hitParticles);
         Debug.Log("撞到了");
+        soundManager.PlaySfx(soundManager.death);
         Time.timeScale=0;
         gameMgr.GameOver(false);
     }

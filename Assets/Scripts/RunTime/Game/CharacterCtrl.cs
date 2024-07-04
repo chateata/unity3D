@@ -22,27 +22,25 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     public float boostedSpeed = 12.5f;
     public float boostDuration = 2f;
     private bool isBoosting = false;
-   
-
     [SerializeField] float jumpSpeed=2;
     [SerializeField] float jumpHeight=5;
     [SerializeField] float fallSpeed=10;
     [SerializeField] float jumpTarget=0; 
 
-  
+    private float time;
    
 
     
     void Start()
     {
         startPosition = transform.position;
-        
+        float time = 0;
     }
     
     void Update()
     {
        
-
+        time += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(3);
@@ -54,7 +52,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
         jump();
         transform.Translate(transform.forward * speed * Time.deltaTime);
 
-        ui.text="Distance:"+(int)(speed*Time.time);
+        ui.text="Distance:"+(int)(speed*time);
     }
     void Move() 
     {

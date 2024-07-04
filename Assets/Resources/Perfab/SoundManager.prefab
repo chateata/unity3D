@@ -51,7 +51,7 @@ MonoBehaviour:
   GameAudio: {fileID: 3575683869155993233}
   SfxAudio: {fileID: 2990713973089905420}
   gameAudio: {fileID: 8300000, guid: e76d2db6be3ab7541b97c6854b887704, type: 3}
-  dash: {fileID: 0}
+  dash: {fileID: 8300000, guid: 6b7ac725088503b4383b701658381731, type: 3}
   pickUp: {fileID: 8300000, guid: 8a9302f70fcd4f24ab92db9c046c6717, type: 3}
   death: {fileID: 8300000, guid: a5e1620fabf0dfb42b203be2165613f9, type: 3}
   attack: {fileID: 0}
