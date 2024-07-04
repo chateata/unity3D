@@ -33,7 +33,6 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     void Start()
     {
         startPosition = transform.position;
-        float time = 0;
         Time.timeScale = 1;
     }
     

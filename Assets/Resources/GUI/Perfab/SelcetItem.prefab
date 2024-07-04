@@ -422,7 +422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'full mark:  100'
+  m_text: Have a nice trip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
   m_sharedMaterial: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
@@ -643,7 +643,6 @@ MonoBehaviour:
   infoIndex: 0
   levelName: 
   description: 
-  score: 0
   rectTransform: {fileID: 0}
 --- !u!225 &4062107138253307556
 CanvasGroup:
