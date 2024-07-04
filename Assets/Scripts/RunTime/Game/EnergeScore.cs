@@ -10,6 +10,7 @@ public class EnergeScore : MonoBehaviour
     void Start()
     {
       soundManager=GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
+      score=0;
     }
 
     void Update()
