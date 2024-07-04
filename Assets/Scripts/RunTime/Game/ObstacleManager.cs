@@ -21,11 +21,12 @@ public class ObstacleManager : MonoBehaviour
 
     private List<GameObject> activeBlocks = new List<GameObject>(); 
     
-
+    public CharacterCtrl playerCtrl;
     void Start()
     {
         player = GameObject.FindWithTag("Vehicle").transform;
-
+        playerCtrl = FindObjectOfType<CharacterCtrl>();
+        gameSpeed = playerCtrl.speed;
         this.blockPrefab = this.transform.Find("Start").gameObject;
 
         this.musicBlocks = bgm1Data.data1.blocks1;
@@ -39,7 +40,7 @@ public class ObstacleManager : MonoBehaviour
 
     void Update() {
         this.genOneBlock();
-        
+        gameSpeed = playerCtrl.speed;
         if (-player.position.z - safeZone >= -activeBlocks[0].transform.position.z)
         {
            this.DestroyBlock();

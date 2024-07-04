@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
         player = FindObjectOfType<CharacterCtrl>();
         playerTransform = player.transform;
         playerSpeed = player.speed;
-        followSpeed = player.speed + 8f;
+        followSpeed = player.speed + 2f;
         gameMgr = GameObject.FindWithTag("GameMgr");
 
         playerLastXpos = playerTransform.position.x;
@@ -51,7 +51,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         playerSpeed = player.speed;
-        followSpeed = player.speed + 8f;
+        followSpeed = 10f;
         
         zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
 
