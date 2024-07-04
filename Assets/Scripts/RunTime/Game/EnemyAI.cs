@@ -17,6 +17,8 @@ public class EnemyAI : MonoBehaviour
     private float attackTimer = 0f;
     private float attackTime = 2f;
     private float playerLastXpos;
+    private float slowDuration = 10f; 
+    private float slowStartTime = 0f; 
 
     public Transform playerTransform;
     public Transform EnemyTransform;
@@ -28,7 +30,7 @@ public class EnemyAI : MonoBehaviour
  
     public CharacterCtrl player;
 
-   
+    public bool isSlowing;
     
 
     void Start()
@@ -38,7 +40,7 @@ public class EnemyAI : MonoBehaviour
         playerSpeed = player.speed;
         followSpeed = player.speed + 2f;
         gameMgr = GameObject.FindWithTag("GameMgr");
-
+        isSlowing = false;
         playerLastXpos = playerTransform.position.x;
 
         chargeParticlesPrefab = Resources.Load<GameObject>("Effects/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal blue");
@@ -51,15 +53,23 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         playerSpeed = player.speed;
-        followSpeed = 10f;
+        followSpeed = player.speed + 2f;
         
-        zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
-
-
-        float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);
-        transform.Translate(Vector3.forward * zSpeed * Time.deltaTime);
-      
-        FollowPlayer();
+        
+       
+        if (isSlowing && slowStartTime <= slowDuration) {
+            slowStartTime += Time.deltaTime;
+            SlowDown();
+        }else{
+            isSlowing = true;
+            slowStartTime = 0f;
+            zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
+            float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);
+            transform.Translate(Vector3.forward * zSpeed * Time.deltaTime);
+            
+            FollowPlayer();
+        }
+        
        
         if(zdistance_player <= attackRange + 0.1f )
         {
@@ -145,5 +155,11 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("No attackParticles!");
         }
         
+    }
+
+    public void SlowDown()
+    {
+        transform.Translate(Vector3.forward * 0f * Time.deltaTime);
+        isSlowing = true;
     }
 }

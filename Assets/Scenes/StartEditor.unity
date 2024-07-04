@@ -1272,6 +1272,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 366549897}
     m_Modifications:
+    - target: {fileID: 1974263726941473524, guid: 0e9d92c4b90d36442930a436b3ab1016, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+    - target: {fileID: 1974263726941473524, guid: 0e9d92c4b90d36442930a436b3ab1016, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+    - target: {fileID: 1974263726941473524, guid: 0e9d92c4b90d36442930a436b3ab1016, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3415384230778197388, guid: 0e9d92c4b90d36442930a436b3ab1016, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1553,6 +1565,18 @@ PrefabInstance:
     - target: {fileID: 6351389802626321220, guid: 3f42bb68127755c468fdf9a6a08f3ebd, type: 3}
       propertyPath: m_Name
       value: Button (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7682412088435727746, guid: 3f42bb68127755c468fdf9a6a08f3ebd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+    - target: {fileID: 7682412088435727746, guid: 3f42bb68127755c468fdf9a6a08f3ebd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+    - target: {fileID: 7682412088435727746, guid: 3f42bb68127755c468fdf9a6a08f3ebd, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9129010781461180961, guid: 3f42bb68127755c468fdf9a6a08f3ebd, type: 3}
       propertyPath: m_Pivot.x

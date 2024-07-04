@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnergyPickup : MonoBehaviour
 {
-   public float energyAmount = 5f; // 能量值
+   public float energyAmount = 2f; // 能量值
 
     void OnTriggerEnter(Collider other)
     {

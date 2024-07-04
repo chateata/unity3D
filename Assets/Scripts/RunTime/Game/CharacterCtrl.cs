@@ -121,6 +121,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
         isMoving = false;
         
     }
+
     void jump()
     {
 

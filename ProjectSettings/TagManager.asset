@@ -12,6 +12,7 @@ TagManager:
   - Undefined
   - Hit
   - Enemy
+  - HitUI
   layers:
   - Default
   - TransparentFX

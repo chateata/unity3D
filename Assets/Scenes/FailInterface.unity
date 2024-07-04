@@ -321,8 +321,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- Main menu -'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 030a6ae4550c6ef4c9b943935fd9ddd5, type: 2}
+  m_sharedMaterial: {fileID: 379358996362792442, guid: 030a6ae4550c6ef4c9b943935fd9ddd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -547,6 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalScroll: {fileID: 0}
+  levelLength: 3
 --- !u!1 &476206318
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,8 +992,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- restart -'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 030a6ae4550c6ef4c9b943935fd9ddd5, type: 2}
+  m_sharedMaterial: {fileID: 379358996362792442, guid: 030a6ae4550c6ef4c9b943935fd9ddd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

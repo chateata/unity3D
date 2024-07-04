@@ -9,7 +9,7 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
     public float currentEnergy;
     public float timeval;
     public CharacterCtrl vehicle;
-
+    public EnemyAI enemy;
     void Start()
     {
         currentEnergy = 0f;
@@ -27,8 +27,8 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
             targetEnergy =0;
             UpdateEnergyBar();
             yield return null;
-            // enemy.SlowDown();
-            // vehicle.Attack();
+            enemy.isSlowing = true;
+           
         }
         while(currentEnergy<targetEnergy){
             currentEnergy += Time.deltaTime * (amount / 1);

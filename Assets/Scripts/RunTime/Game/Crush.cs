@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Crush : MonoBehaviour
 {
+    private ImageFadeIn imageFadeIn;
+    
+    
     SoundManager soundManager;
     private GameObject HitParticles = null;
     private GameObject HitParticlesPrefab = null;
@@ -16,10 +19,14 @@ public class Crush : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<CharacterCtrl>();
-      
+        imageFadeIn = FindObjectOfType<ImageFadeIn>();
         soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
         HitParticlesPrefab = Resources.Load<GameObject>("Effects/Matthew Guz/Hits Effects FREE/Prefab/Basic Hit 2");
         gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
+    }
+    void SomeFunction()
+    {
+        imageFadeIn.FadeInImage();
     }
 
     private void GetHit(Vector3 pos,bool isPlayer)
@@ -37,6 +44,7 @@ public class Crush : MonoBehaviour
             if (hitParticles != null)
             {
                 hitParticles.Play();
+                SomeFunction();
                 StartCoroutine(WaitForParticlesAndDestroy(hitParticles));
                 
             }
