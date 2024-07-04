@@ -18,6 +18,10 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     public float speed = 5f;
     private float lastHorizontalInputTime = 0f;
     private float inputHoldTime = 0.3f; 
+     
+    public float boostedSpeed = 12.5f;
+    public float boostDuration = 2f;
+    private bool isBoosting = false;
    
 
     [SerializeField] float jumpSpeed=2;
@@ -143,6 +147,29 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
                 transform.position=newPos;
             }
         }
+    }
+
+    public void Accelerate()
+    {
+        Debug.Log("Accelerate");
+        if (!isBoosting)
+        {
+            StartCoroutine(Boost());
+        }
+    }
+
+    private IEnumerator Boost()
+    {
+        isBoosting = true;
+        Debug.Log(isBoosting);
+        float originalSpeed = speed;
+        speed = boostedSpeed;
+        transform.Translate(transform.forward * speed * Time.deltaTime);
+
+        yield return new WaitForSeconds(boostDuration);
+
+        speed = originalSpeed;
+        isBoosting = false;
     }
 
     

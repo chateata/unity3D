@@ -8,6 +8,7 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
     public float maxEnergy = 60f;
     public float currentEnergy;
     public float timeval;
+    public CharacterCtrl vehicle;
 
     void Start()
     {
@@ -21,8 +22,12 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
 
     private IEnumerator SmoothIncreaseEnergy(float amount){
         float targetEnergy = currentEnergy + amount;
-        if(targetEnergy > maxEnergy){
-            UpSpeed();
+        if(currentEnergy > maxEnergy){
+            currentEnergy = 0;
+            targetEnergy =0;
+            UpdateEnergyBar();
+            yield return null;
+            vehicle.Accelerate();
         }
         while(currentEnergy<targetEnergy){
             currentEnergy += Time.deltaTime * (amount / 1);
@@ -38,7 +43,4 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
         energyFullImage.fillAmount = currentEnergy / maxEnergy;
     }
 
-    void UpSpeed(){
-        
-    }
 }
