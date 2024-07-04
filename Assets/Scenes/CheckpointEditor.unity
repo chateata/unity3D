@@ -2404,6 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalScroll: {fileID: 933582983}
+  levelScores: 
 --- !u!1 &1470802427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,9 +3069,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 520904053c5e49b4fa55c884e87fd065, type: 3}
     - target: {fileID: 1801038976453752515, guid: adc566f966244fd4b83bd99b9bae8c59, type: 3}
+      propertyPath: gameMgr
+      value: 
+      objectReference: {fileID: 1396460558}
+    - target: {fileID: 1801038976453752515, guid: adc566f966244fd4b83bd99b9bae8c59, type: 3}
       propertyPath: startAudio
       value: 
       objectReference: {fileID: 8300000, guid: e76d2db6be3ab7541b97c6854b887704, type: 3}
+    - target: {fileID: 1801038976453752515, guid: adc566f966244fd4b83bd99b9bae8c59, type: 3}
+      propertyPath: startAudio1
+      value: 
+      objectReference: {fileID: 8300000, guid: e76d2db6be3ab7541b97c6854b887704, type: 3}
+    - target: {fileID: 1801038976453752515, guid: adc566f966244fd4b83bd99b9bae8c59, type: 3}
+      propertyPath: startAudio2
+      value: 
+      objectReference: {fileID: 8300000, guid: 85f8b66f8a918684c9e376e95c002539, type: 3}
+    - target: {fileID: 1801038976453752515, guid: adc566f966244fd4b83bd99b9bae8c59, type: 3}
+      propertyPath: horizontalScroll
+      value: 
+      objectReference: {fileID: 933582983}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

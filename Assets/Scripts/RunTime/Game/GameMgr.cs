@@ -11,7 +11,7 @@ public class GameMgr : MonoBehaviour
     public SelectScrollHorizon horizontalScroll;
     private int currentLevelIndex = 0;
 
-    int[] levelScores = null;
+    public int[] levelScores = null;
 
     private void Awake()
     {
