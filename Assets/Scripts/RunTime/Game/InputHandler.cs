@@ -15,6 +15,6 @@ public class InputHandler : MonoBehaviour
 
     void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("StartEditor");
+        SceneManager.LoadScene("CheckpointEditor");
     }
 }

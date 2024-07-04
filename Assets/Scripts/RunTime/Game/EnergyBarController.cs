@@ -27,7 +27,8 @@ public class EnergyBarController : UnitySingleton<EnergyBarController>
             targetEnergy =0;
             UpdateEnergyBar();
             yield return null;
-            vehicle.Accelerate();
+            // enemy.SlowDown();
+            // vehicle.Attack();
         }
         while(currentEnergy<targetEnergy){
             currentEnergy += Time.deltaTime * (amount / 1);
