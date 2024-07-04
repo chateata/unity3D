@@ -827,6 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalScroll: {fileID: 0}
+  levelLength: 3
 --- !u!1 &1639011537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111974273823709618, guid: cce5aae56b300284e87c215df425a121, type: 3}
@@ -1106,6 +1107,10 @@ PrefabInstance:
       propertyPath: death
       value: 
       objectReference: {fileID: 8300000, guid: a5e1620fabf0dfb42b203be2165613f9, type: 3}
+    - target: {fileID: 247444658276342123, guid: f0971dd5a5a30ac4690fd72ab0bded1d, type: 3}
+      propertyPath: gameAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 85f8b66f8a918684c9e376e95c002539, type: 3}
     - target: {fileID: 320077820122215390, guid: f0971dd5a5a30ac4690fd72ab0bded1d, type: 3}
       propertyPath: m_Name
       value: SoundManager
