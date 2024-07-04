@@ -15,7 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/CheckpointEditor.unity
     guid: 229bc50a8e56b63429297fe47c1c3f8d
   - enabled: 1
-    path: Assets/Scenes/mapEditor.unity
+    path: Assets/Scenes/mapEditor0.unity
+    guid: aa0cc99c7b3c5f84e8163f389e38199a
+  - enabled: 1
+    path: Assets/Scenes/mapEditor1.unity
     guid: 5b659a19206828244b0dbbf363580e60
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ebcb757fbe7e6844891c6c8e688e6d42, type: 2}

@@ -78,17 +78,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapChunks:
-  - {fileID: 2409309367689847419}
   - {fileID: 7497148205956279676}
+  - {fileID: 2409309367689847419}
   - {fileID: 3318804241173029590}
   - {fileID: 4454303884712746571}
   - {fileID: 7983985602210526655}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   chunkLength: 10
+  timeCtrl: {fileID: 0}
+  gameMgr: {fileID: 0}
 --- !u!1001 &325946228959780660
 PrefabInstance:
   m_ObjectHideFlags: 0

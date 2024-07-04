@@ -18,7 +18,7 @@ public class EnergeScore : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(this.tag == "PickUp"){
+        if(other.tag == "Vehicle"){
             soundManager.PlaySfx(soundManager.pickUp);
             score++;
             ui.text = "score:"+score;

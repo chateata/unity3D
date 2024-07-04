@@ -44,7 +44,7 @@ public class MusicPUMgr : MonoBehaviour
         music.name = "music" + this.genIndex;
         music.transform.SetParent(this.blockRoot,false);
         music.tag="PickUp";
-        Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, GameObject.Find("Vehicle").transform.position.z-this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
+        Vector3 pos= new Vector3(this.musicBlocks[this.genIndex].index, 0.15f, GameObject.FindWithTag("Vehicle").transform.position.z-this.gameSpeed * this.musicBlocks[this.genIndex].zTime);
         music.transform.position=pos;
         this.genIndex++;
     }

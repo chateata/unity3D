@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip pickUp; 
     public AudioClip death;    
     public AudioClip attack;
+    public AudioClip button;
 
 
     private void Start()
