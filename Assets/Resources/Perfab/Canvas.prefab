@@ -171,6 +171,7 @@ MonoBehaviour:
   maxEnergy: 60
   currentEnergy: 0
   timeval: 0
+  vehicle: {fileID: 0}
 --- !u!1 &238413469159798502
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Distance\uFF1A"
+  m_Text: Distance:0
 --- !u!1 &3617155331667781320
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,8 +545,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
-  m_sharedMaterial: {fileID: 5509538996520301977, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+  m_sharedMaterial: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -906,7 +907,7 @@ GameObject:
   - component: {fileID: 4442210849648687317}
   - component: {fileID: 7286178150903278760}
   - component: {fileID: 3802123810207447464}
-  - component: {fileID: 5057805333191565559}
+  - component: {fileID: 3376956905668126128}
   m_Layer: 5
   m_Name: setting
   m_TagString: Untagged
@@ -968,7 +969,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &5057805333191565559
+--- !u!114 &3376956905668126128
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1034,6 +1035,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8300000, guid: b9b71a83bed93e5459328d57b26fe71f, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &5082936730436092330
@@ -1103,8 +1128,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
-  m_sharedMaterial: {fileID: 5509538996520301977, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+  m_sharedMaterial: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1248,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Score\uFF1A"
+  m_Text: Score:0
 --- !u!1 &6134832894747736279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,8 +1522,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Restart
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
-  m_sharedMaterial: {fileID: 5509538996520301977, guid: 9b0959ccb72e51a469e647c70035a24c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
+  m_sharedMaterial: {fileID: 5509538996520301977, guid: e0eeb286e3e4ea54e8069bd21ef4f4bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

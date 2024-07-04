@@ -55,14 +55,14 @@ public class GameMgr : MonoBehaviour
     {
         if(win)
         {
-            SceneManager.LoadScene(0);
-            // SceneManager.LoadScene("WinIntetface");
-            // Time.timeScale = 1;
+            
+            SceneManager.LoadScene("WinIntetface");
+            Time.timeScale = 1;
            
         }else{
-            SceneManager.LoadScene(0);
-            // SceneManager.LoadScene("FailInterface");
-            // Time.timeScale = 1;
+            // SceneManager.LoadScene(0);
+            SceneManager.LoadScene("FailInterface");
+            Time.timeScale = 1;
         }
         
         return;
