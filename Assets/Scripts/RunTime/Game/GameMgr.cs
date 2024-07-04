@@ -10,7 +10,7 @@ public class GameMgr : MonoBehaviour
 {
     public SelectScrollHorizon horizontalScroll;
     private static int currentLevelIndex = 0;
-    
+    public int levelLength = 3;
     static int[] levelScores = null;
     static int num;
     static string[] names;
@@ -29,7 +29,7 @@ public class GameMgr : MonoBehaviour
             {
 
                  flag ++;
-            num = 3;
+            num = levelLength;
 
             names = new string[num];
             textures = new Texture[num];

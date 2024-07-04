@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class SettingCtrl : MonoBehaviour
 {
+    private GameMgr gameMgr;
+
+    public void Start()
+    {
+        gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
+    }
     public void ReStart ()
     {
-        SceneManager.LoadScene("mapEditor");
+        SceneManager.LoadScene("mapEditor"+gameMgr.GetCurrentLevelIndex());
         Time.timeScale = 1f;
     }
 

@@ -15,11 +15,11 @@ public class StartAudio : MonoBehaviour
     public AudioClip close_button;
     public int lastIndex;
     public AudioClip[] Music;
-    public AudioSource audio;
+    public new AudioSource audio;
     public void Start(){
         gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
         audio = gameObject.AddComponent<AudioSource>();
-        Music = new AudioClip[gameMgr.levelScores.Length];
+        Music = new AudioClip[gameMgr.levelLength];
         Music[0]=startAudio1;
         Music[1]=startAudio2;
         Music[2]=startAudio3;
