@@ -10,5 +10,6 @@ public class Music
 
 public class PickupData
 {
-    public Music[] musics;
+    public Music[] musics2;
+    public Music[] musics1;
 }

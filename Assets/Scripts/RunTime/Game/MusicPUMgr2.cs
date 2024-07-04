@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPUMgr : MonoBehaviour
+public class MusicPUMgr2 : MonoBehaviour
 {
     
     private GameObject blockPrefab=null;
@@ -21,7 +21,7 @@ public class MusicPUMgr : MonoBehaviour
     {
         this.blockPrefab = this.transform.Find("SM_MusicNotes").gameObject;
 
-        this.musicBlocks = bgm1Pickup.data1.musics1;
+        this.musicBlocks = bgm2Pickup.data2.musics2;
         this.totalBlocks = this.musicBlocks.Length;
 
         for(int i=0;i<6;i++){
@@ -50,11 +50,3 @@ public class MusicPUMgr : MonoBehaviour
     }
 
 }
-
-
-
-
-   
-
-    //管理所有游戏元素：游戏主角，障碍，音乐数据，游戏数据（速度，重力），特效控制
-
