@@ -28,28 +28,28 @@ public class GameMgr : MonoBehaviour
             if(flag == 0)
             {
 
-                 flag ++;
-            num = levelLength;
+                flag ++;
+                num = levelLength;
 
-            names = new string[num];
-            textures = new Texture[num];
+                names = new string[num];
+                textures = new Texture[num];
 
-            worldNames = new string[num];
-            descriptions = new string[num];
-            levelScores = new int[num];
+                worldNames = new string[num];
+                descriptions = new string[num];
+                levelScores = new int[num];
             
-            for (int i = 0; i < num; i++)
-            {
-                names[i] = (i + 1).ToString();
-                String path = "GUI/Texture2D/cover" + (i + 1) + "";
-                Debug.Log(path);
-                textures[i] = Resources.Load<Texture2D>(path);
+                for (int i = 0; i < num; i++)
+                {
+                    names[i] = (i + 1).ToString();
+                    String path = "GUI/Texture2D/cover" + (i + 1) + "";
+                    Debug.Log(path);
+                    textures[i] = Resources.Load<Texture2D>(path);
 
-              
-                worldNames[i] = "Name" + (i+1).ToString();
-                descriptions[i] = "description: " + (i + 1).ToString();
-                levelScores[i] = -1;
-            }
+                
+                    worldNames[i] = "Name" + (i+1).ToString();
+                    descriptions[i] = "description: " + (i + 1).ToString();
+                    levelScores[i] = -1;
+                }
             }
            
             Debug.Log("Start");
@@ -58,6 +58,7 @@ public class GameMgr : MonoBehaviour
             {
                 print(index);
             };
+
         }
 
        
@@ -67,7 +68,6 @@ public class GameMgr : MonoBehaviour
     {
         if(win)
         {
-            
             SceneManager.LoadScene("WinInterface");
             Time.timeScale = 1;
            
@@ -95,7 +95,7 @@ public class GameMgr : MonoBehaviour
 
     public void SetLevelScore(int levelIndex, int score)
     {
-       
+        Debug.Log("1 + levelScores[levelIndex] " + levelScores[levelIndex]);
         if(score >= levelScores[levelIndex])   
         {
             levelScores[levelIndex] = score;

@@ -17,13 +17,14 @@ public class checkPoint : MonoBehaviour
         startAudio.PlaySfx(startAudio.button);
         int index = gameMgr.GetCurrentLevelIndex();
         
-        String sceneName = "mapEditor" +index;
-        if (SceneManager.GetSceneByName(sceneName).IsValid()){
-            SceneManager.LoadScene(sceneName);
-        }else{
-            NullBox.SetActive(true);
-        }
-        Debug.Log(sceneName);
+        String sceneName = "mapEditor" + index;
+        // if (SceneManager.GetSceneByName(sceneName).IsValid()){
+        SceneManager.LoadScene(sceneName);
+        // }else{
+        //     NullBox.SetActive(true);
+        // }
+        // Debug.Log(sceneName);
+        // Debug.Log(SceneManager.GetSceneByName(sceneName).IsValid());
         
 
    }
