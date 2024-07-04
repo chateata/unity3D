@@ -685,6 +685,10 @@ PrefabInstance:
       propertyPath: ui
       value: 
       objectReference: {fileID: 801896566}
+    - target: {fileID: 8320865992275839079, guid: 214ccd7ba74a77644bce727803cfc3d3, type: 3}
+      propertyPath: boostDuration
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2395203259315097892, guid: 214ccd7ba74a77644bce727803cfc3d3, type: 3}
     m_RemovedGameObjects: []
@@ -721,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156236065035474383, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 400
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6156236065035474383, guid: 9fb7de9341ebb4b4dad5e14960ade54d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -815,6 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalScroll: {fileID: 0}
+  levelLength: 3
 --- !u!114 &1684421114
 MonoBehaviour:
   m_ObjectHideFlags: 0
