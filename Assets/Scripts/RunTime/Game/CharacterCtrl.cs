@@ -34,6 +34,7 @@ public class CharacterCtrl : UnitySingleton<CharacterCtrl>
     {
         startPosition = transform.position;
         float time = 0;
+        Time.timeScale = 1;
     }
     
     void Update()
