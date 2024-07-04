@@ -7,6 +7,7 @@ public class checkPoint : MonoBehaviour
 {
     StartAudio startAudio;
     GameMgr gameMgr;
+    public GameObject NullBox; 
     void Start(){
         startAudio = GameObject.FindGameObjectWithTag("Audio").GetComponent<StartAudio>();
         gameMgr = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameMgr>();
@@ -17,8 +18,14 @@ public class checkPoint : MonoBehaviour
         int index = gameMgr.GetCurrentLevelIndex();
         
         String sceneName = "mapEditor" +index;
+        if (SceneManager.GetSceneByName(sceneName).IsValid()){
+            SceneManager.LoadScene(sceneName);
+        }else{
+            NullBox.SetActive(true);
+        }
         Debug.Log(sceneName);
-        SceneManager.LoadScene(sceneName);
+        
+
    }
 
    public void Quit()

@@ -217,7 +217,7 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
 
 
 
-        Debug.Log("1 levelScores[levelIndex]:" + gameMgr.GetLevelScore(index));
+        // Debug.Log("1 levelScores[levelIndex]:" + gameMgr.GetLevelScore(index));
 
         levelNameText.text = items[minIndex].levelName;
         scoreText.text = gameMgr.GetLevelScore(index) == -1? "Locked" :"score:" + gameMgr.GetLevelScore(index);
