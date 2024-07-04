@@ -40,16 +40,21 @@ public class GameMgr : MonoBehaviour
             
                 for (int i = 0; i < num; i++)
                 {
-                    names[i] = (i + 1).ToString();
+                    worldNames[i] = (i).ToString();
                     String path = "GUI/Texture2D/cover" + (i + 1) + "";
                     Debug.Log(path);
                     textures[i] = Resources.Load<Texture2D>(path);
 
                 
-                    worldNames[i] = "Name" + (i+1).ToString();
-                    descriptions[i] = "description: " + (i + 1).ToString();
+                    // worldNames[i] = "Name" + (i+1).ToString();
+                    // descriptions[i] = "description: " + (i + 1).ToString();
                     levelScores[i] = -1;
                 }
+                names[0] = "Aventurine";
+                names[1] = "ForgetName";
+
+                descriptions[0] = "All to the Amber King";
+                descriptions[1] = "I don't want to go to school";
             }
            
             Debug.Log("Start");

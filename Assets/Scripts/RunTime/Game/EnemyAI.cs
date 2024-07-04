@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
     private float attackTimer = 0f;
     private float attackTime = 2f;
     private float playerLastXpos;
-    private float slowDuration = 10f; 
+    private float slowDuration = 6f; 
     private float slowStartTime = 0f; 
 
     public Transform playerTransform;
@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour
         player = FindObjectOfType<CharacterCtrl>();
         playerTransform = player.transform;
         playerSpeed = player.speed;
-        followSpeed = player.speed + 2f;
+        followSpeed = player.speed + 8f;
         gameMgr = GameObject.FindWithTag("GameMgr");
         isSlowing = false;
         playerLastXpos = playerTransform.position.x;
@@ -53,7 +53,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         playerSpeed = player.speed;
-        followSpeed = player.speed + 2f;
+        followSpeed = player.speed + 8f;
         
         
        
@@ -61,7 +61,7 @@ public class EnemyAI : MonoBehaviour
             slowStartTime += Time.deltaTime;
             SlowDown();
         }else{
-            isSlowing = true;
+            isSlowing = false;
             slowStartTime = 0f;
             zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
             float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);

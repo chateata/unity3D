@@ -12,7 +12,7 @@ public class SettingCtrl : MonoBehaviour
     }
     public void ReStart ()
     {
-        SceneManager.LoadScene("mapEditor"+gameMgr.GetCurrentLevelIndex());
+        SceneManager.LoadScene("mapEditor" + gameMgr.GetCurrentLevelIndex());
         Time.timeScale = 1f;
     }
 
