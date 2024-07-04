@@ -46,7 +46,7 @@ public class SelectScrollItem : MonoBehaviour, IDragHandler, IPointerDownHandler
        {
             image.texture = texture;
             nameText.text = (infoIndex+1).ToString();
-            Debug.Log(nameText.text);
+            // Debug.Log(nameText.text);
             this.description = description;
             desText.text = description;
             this.infoIndex = infoIndex;

@@ -10,5 +10,6 @@ public class Block
 
 public class MusicData
 {
-    public Block[] blocks;
+    public Block[] blocks1;
+    public Block[] blocks2;
 }

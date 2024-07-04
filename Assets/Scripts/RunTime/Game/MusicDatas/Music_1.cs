@@ -9,7 +9,7 @@ public class Song_1
     public static float musicTime ;//=?
 
     public static MusicData data = new MusicData{
-        blocks = new Block[] {
+        blocks1 = new Block[] {
             //new Block { zTime = 0.1f, index = 0 }
             
         }

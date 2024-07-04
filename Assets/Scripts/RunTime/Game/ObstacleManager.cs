@@ -28,7 +28,7 @@ public class ObstacleManager : MonoBehaviour
 
         this.blockPrefab = this.transform.Find("Start").gameObject;
 
-        this.musicBlocks = bgm1Data.data.blocks;
+        this.musicBlocks = bgm1Data.data1.blocks1;
         this.totalBlocks = this.musicBlocks.Length;
 
         for(int i=0;i<6;i++){

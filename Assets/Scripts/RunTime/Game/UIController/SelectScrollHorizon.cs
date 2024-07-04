@@ -143,7 +143,7 @@ public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHand
             middle = itemInfos.Length - offsetTimes % itemInfos.Length;
         }else{
 
-            Debug.Log(offsetTimes+"//"+itemInfos.Length);
+            // Debug.Log(offsetTimes+"//"+itemInfos.Length);
             middle = -offsetTimes % itemInfos.Length;
         }
         int infoIndex = middle;
