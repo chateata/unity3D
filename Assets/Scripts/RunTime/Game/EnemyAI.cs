@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
 
     public Transform playerTransform;
     public Transform EnemyTransform;
-    private GameObject gameMgr;
+
     private GameObject chargeParticles = null;
     private GameObject attackParticles = null;
     private GameObject chargeParticlesPrefab = null;
@@ -39,7 +39,7 @@ public class EnemyAI : MonoBehaviour
         playerTransform = player.transform;
         playerSpeed = player.speed;
         followSpeed = player.speed + 8f;
-        gameMgr = GameObject.FindWithTag("GameMgr");
+
         isSlowing = false;
         playerLastXpos = playerTransform.position.x;
 
@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour
         playerSpeed = player.speed;
         followSpeed = player.speed + 8f;
         
-        
+        zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
        
         if (isSlowing && slowStartTime <= slowDuration) {
             slowStartTime += Time.deltaTime;
@@ -63,7 +63,7 @@ public class EnemyAI : MonoBehaviour
         }else{
             isSlowing = false;
             slowStartTime = 0f;
-            zdistance_player = Mathf.Abs(playerTransform.position.z - transform.position.z);
+            
             float zSpeed = Mathf.Lerp(followSpeed, playerSpeed, attackRange / zdistance_player);
             transform.Translate(Vector3.forward * zSpeed * Time.deltaTime);
             
@@ -113,9 +113,11 @@ public class EnemyAI : MonoBehaviour
 
         }else
         {
-            
+            if(chargeParticles!=null)Destroy(chargeParticles);
+            if(attackParticles!=null)Destroy(attackParticles);
             isAttacking = false;
             chargeTimer = 0f;
+            attackTimer = 0f;
         }
 
        FollowEnemy(attackParticles);
