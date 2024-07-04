@@ -41,10 +41,14 @@ public class ObstacleManager : MonoBehaviour
     void Update() {
         this.genOneBlock();
         gameSpeed = playerCtrl.speed;
-        if (-player.position.z - safeZone >= -activeBlocks[0].transform.position.z)
+        if(activeBlocks.Count > 0)
         {
-           this.DestroyBlock();
+            if (-player.position.z - safeZone >= -activeBlocks[0].transform.position.z)
+            {
+            this.DestroyBlock();
+            }
         }
+        
        
     }
 
