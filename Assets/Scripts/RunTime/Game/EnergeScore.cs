@@ -12,7 +12,6 @@ public class EnergeScore : MonoBehaviour
       soundManager=GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
       score=0;
     }
-
     void Update()
     {
         transform.Rotate(0,1,0);

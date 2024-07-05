@@ -108,18 +108,4 @@ public class GameMgr : MonoBehaviour
             Debug.Log("3 levelScores[levelIndex]:" + levelScores[levelIndex]);
         }
     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 }

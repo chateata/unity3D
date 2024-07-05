@@ -14,11 +14,11 @@ public class NewBehaviourScript : MonoBehaviour
    public void Quit()
    {
         // Application.Quit();
-        // ÔÚ±à¼­Æ÷Ä£Ê½ÏÂ£¬ÍË³ö²¥·ÅÄ£Ê½
+        // ï¿½Ú±à¼­ï¿½ï¿½Ä£Ê½ï¿½Â£ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-        // ÔÚ¹¹½¨ºóµÄÓ¦ÓÃÖÐ£¬ÍË³öÓÎÏ·
+        // ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ð£ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Ï·
         Application.Quit();
 #endif
     }

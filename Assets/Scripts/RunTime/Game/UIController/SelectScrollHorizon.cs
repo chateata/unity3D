@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-//text
+
 public class SelectScrollHorizon : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
    [SerializeField]

@@ -23,15 +23,6 @@ public class checkPoint : MonoBehaviour
         }else{
             NullBox.SetActive(true);
         }
-        
-
-       
-           
-        
-       
-     
-        
-
    }
 
    public void Quit()

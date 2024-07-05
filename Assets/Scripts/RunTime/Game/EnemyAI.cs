@@ -49,7 +49,6 @@ public class EnemyAI : MonoBehaviour
        
     }
 
-
     void Update()
     {
         playerSpeed = player.speed;
